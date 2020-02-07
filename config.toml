@@ -1,0 +1,2 @@
+[permalinks]
+blog = "/blog/:year/:01/:02/:title/"
