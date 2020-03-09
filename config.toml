@@ -1,2 +1,61 @@
+title = "Open Container Initiative"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+copyright = "Cloud Native Computing Foundation"
+
+enableGitInfo = true
+
+[markup.highlight]
+style = "paraiso-dark"
+
+[params]
+font_awesome_version = "5.12.0"
+description = "Boilerplate for building beautiful websites"
+favicon = "favicon.png"
+repositoryUrl = "https://github.com/opencontainers/opencontainers.org"
+contentDir = "/content/"
+
+[params.logos]
+navbar = "cncf-color.png"
+
 [permalinks]
 blog = "/blog/:year/:01/:02/:title/"
+
+[[params.colors.extra]]
+name = "twitter-blue"
+hex = "#00aced"
+
+[[params.social]]
+name = "Twitter"
+color = "twitter-blue"
+url = "https://twitter.com/oci_org"
+icon = "fab fa-twitter"
+
+[[params.fonts]]
+name = "Fira Sans"
+sizes = [300, 400, 600, 700]
+type = "sans_serif"
+
+[[params.fonts]]
+name = "Fira Mono"
+sizes = [300, 400, 600, 700]
+type = "monospace"
+
+[[params.fonts]]
+name = "Fire Sans"
+sizes = [100, 200, 300, 400, 500, 600, 700]
+type = "heading_font"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "CNCF"
+url = "https://cncf.io"
+weight = 2
+
+[[menu.main]]
+name = "Test"
+url = "/docs/test-content/"
+weight = 3
