@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "autoprefixer": "^9.7.4",
+    "autoprefixer": "^9.7.5",
     "bulma": "^0.8.0",
     "postcss-cli": "^7.1.0",
     "tailwindcss": "^1.2.0"
