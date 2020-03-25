@@ -1,10 +1,3 @@
-{{ with site.Copyright }}
-{{ $year := now.Year }}
-<footer class="footer">
-  <div class="container">
-    <p class="title is-size-6 has-text-light has-text-weight-light">
-      &copy; {{ $year }} {{ . }}
-    </p>
-  </div>
+<footer class="w-full text-center border-t border-gray-200 p-4 pin-b text-xs text-gray-400">
+  <p>made with <a href="https://gohugo.io" class="underline hover:text-blue-400">Hugo</a> and <a href="https://tailwindcss.com" class="underline hover:text-blue-400">TailwindCSS</a></p>
 </footer>
-{{ end }}
