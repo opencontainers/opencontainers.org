@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='{{ .Site.LanguageCode }}'>
     {{- partial "head.html" . -}}
-    <body class="flex flex-col min-h-screen">
+    <body class="flex flex-col min-h-screen bg-lightgray">
         {{- partial "header.html" . -}}
         <main class="flex-1 sm:mx-4 md:mx-12 lg:mx-24 mt-4 sm:mt-16">
         {{- block "main" . }}{{- end }}
