@@ -3,7 +3,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 copyright = "Cloud Native Computing Foundation"
 
 enableGitInfo = true
-theme = "oci-tailwind"
 
 [markup.highlight]
 style = "paraiso-dark"
