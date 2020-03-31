@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="inner">
+    <h1 class="font-serif font-thin text-5xl text-gray-500">{{ site.Title }}</h1>
+    <p class="description">{{ $.Site.Params.description | markdownify }}</p>
+    <p class="herodescription">{{ $.Site.Params.herodescription | markdownify }}</p>
+    <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 shadow">
+      Learn more
+    </button>
+    <div class="hero-img">
+      <img src="img/hero.svg"/>
+    </div>
+  </div>
+</div>

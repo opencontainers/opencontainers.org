@@ -840,7 +840,7 @@ postcss-nested@^4.1.1:
     postcss "^7.0.21"
     postcss-selector-parser "^6.0.2"
 
-postcss-reporter@^6.0.0:
+postcss-reporter@^6.0.0, postcss-reporter@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/postcss-reporter/-/postcss-reporter-6.0.1.tgz#7c055120060a97c8837b4e48215661aafb74245f"
   integrity sha512-LpmQjfRWyabc+fRygxZjpRxfhRf9u/fdlKf4VHG4TSPbV2XNsuISzYW1KL+1aQzx53CAppa1bKG4APIB/DOXXw==
