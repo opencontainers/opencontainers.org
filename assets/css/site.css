@@ -1,3 +1,16 @@
+/* Home */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+/* Typography */
+
+.lekton {
+  font-family: 'Lekton', sans-serif;
+}
+
 .header-shadow {
   box-shadow: 4px 4px 26px rgba(0, 0, 0, 0.29);
 }
