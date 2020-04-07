@@ -1,9 +1,21 @@
-/* Home */
+/* General */
 
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
+
+
+/* General - Footer */
+
+footer a {
+  color: #837BFF;
+}
+
+footer a:hover {
+  color: #FFFFFF;
+}
+
 
 /* Typography */
 
