@@ -1,6 +1,5 @@
 ---
-title: 
-Innovative Cloud Organizations Join the Open Container Initiative to Help Shape Industry Container Standards
+title: Innovative Cloud Organizations Join the Open Container Initiative to Help Shape Industry Container Standards
 subhead: Cycle.io, Dataman, and Wercker join Open Container Initiative as community prepares to issue first major release
 author:
   name: Open Container Initiative
