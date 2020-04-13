@@ -1,14 +1,14 @@
 <div class="bg-darkpurple mt-20 mb-20">
   <div class="inner grid grid-cols-12 p-10">
     <div class="sm:col-span-12 md:col-span-12 lg:col-span-7 px-5 py-10">
-    <h1 class="lekton text-5xl text-white">{{ site.Title }}</h1>
-    <p class="lekton text-2xl text-white description">{{ $.Site.Params.description | markdownify }}</p>
-    <p class="text-white herodescription">{{ $.Site.Params.herodescription | markdownify }}</p>
-    <button class="m-10 py-2 px-4 float-right bg-lightpurple hover:bg-mediumpurple lekton text-white text-xl shadow">
-      Learn more <ion-icon name="return-down-forward-sharp" class="align-middle"></ion-icon>
-    </button>
+      <h1 class="lekton text-5xl text-white">{{ site.Title }}</h1>
+      <p class="lekton text-2xl text-white description">{{ $.Site.Params.description | markdownify }}</p>
+      <p class="text-white herodescription">{{ $.Site.Params.herodescription | markdownify }}</p>
+      <button class="hero-btn">
+        Learn more <ion-icon name="return-down-forward-sharp" class="align-middle"></ion-icon>
+      </button>
     </div>
-    <div class="sm:hidden md:block md:col-span-12 lg:block lg:col-span-5 hero-img md:px-5 md:px-10">
+    <div class="hero-img">
       <img src="img/hero.svg"/>
     </div>
   </div>

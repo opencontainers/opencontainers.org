@@ -26,3 +26,44 @@ footer a:hover {
 .header-shadow {
   box-shadow: 4px 4px 26px rgba(0, 0, 0, 0.29);
 }
+
+/* partials/home/hero.html */
+
+.hero-btn {
+  @apply m-10 py-2 px-4 float-right bg-lightpurple shadow text-white text-xl lekton;
+}
+
+.hero-btn:hover {
+  @apply bg-mediumpurple;
+}
+
+@screen sm {
+  .hero-img {
+    @apply hidden;
+  }
+
+}
+
+@screen md {
+  .hero-img {
+    @apply block col-span-12 px-10;
+  }
+
+}
+
+@screen lg {
+  .hero-img {
+    @apply block col-span-5; 
+  }
+
+}
+
+/* partials/home/trio.html */
+
+.trio {
+  @apply block flex flex-col m-10 p-10 shadow-md bg-white text-black;
+}
+
+.trio:hover {
+  @apply bg-lightgray;
+}
