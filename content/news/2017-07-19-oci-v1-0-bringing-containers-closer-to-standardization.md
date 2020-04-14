@@ -1,0 +1,38 @@
+---
+title: OCI v1.0 – Bringing Containers Closer to Standardization
+author:
+  name: Chris Aniszczyk
+  tag: cra
+tags: blog
+date: 2017-07-19
+---
+
+Over the past few years, there has been rapid growth in both interest and usage of containers. Almost all major technology vendors and cloud providers have announced container-based solutions, and there has been a proliferation of start-ups founded in this area as well. The promise of containers as a source of application portability requires the establishment of certain level of standards to ensure neutrality.
+
+We launched the [Open Container Initiative](https://www.opencontainers.org/) (OCI) with the goal of developing common, minimal, open standards and specifications around container technology without the fear of lock-in. I am proud to say that, after much hard work and passionate contributions from the community, we have reached our first critical milestone: the release of OCI v1.0!
+
+The release brings a set of common, minimal, open standards and specs around container technology to a reality, containing both the [image format specification](https://github.com/opencontainers/image-spec) (a specification for the container image format) and the [runtime specification](https://github.com/opencontainers/runtime-spec/) (a specification for managing the lifecycle of a container). The openness of the specifications yields a set of truly shared standards across the industry, that reduce interoperability issues and fuel innovation.
+
+I am incredibly proud of the entire OCI community for the all the hard work that went into this release! Coupled with early pre-release deployments from organizations like, AWS, Docker, Cloud Foundry, CoreOS, Mesosphere, Oracle, Red Hat and Kubernetes, OCI v1.0 brings the industry closer to true portability and standardization. This work could not have been done without the real heroes, our project maintainers, who have toiled long and hard to bring these specifications to life:
+
+**Vincent Batts (Red Hat):** “Pulling together contributors across a variety of companies and technologies can be tough, but it’s what we needed to do for the rapidly evolving and growing container ecosystem. The two years we’ve spent developing and refining the v1 release of the OCI specifications is just the first step towards much more collaboration around container life-cycles and distribution. It’s going to be exciting to see how the v1 specifications are used in the next iterations of tooling and technology from the ecosystem, and how they are used to enable collaboration. It’s been a real honor to work with so many smart and respected folks.”
+
+**Brendan Burns (Microsoft):** “I’m incredibly excited to see OCI reach this important milestone. Open standards ensure the success of the revolution that containers are bringing to distributed cloud computing. Such standards also provide a critical building block on which higher level systems like Kubernetes can be built. I congratulate the OCI organization and the broader container community for reaching this important milestone.”
+
+**Michael Crosby (Docker):** “I’m happy to see all the hard work that the community and maintainers put in over the past few years finally released.  From the early days of libcontainer to the OCI 1.0 release, many of the original maintainers, as well as a few new contributors to OCI, have stuck with the project over the years to get us where we are today.”
+
+**Stephen Day (Docker):** “It’s great to see Docker’s image format become enshrined in the OCI image specification. The flexible components work well in meeting a wide variety of use cases for distributing container images in a secure manner. With the release of the 1.0 specification, it will be exciting to watch the industry grow around these strong primitives.”
+
+**Qiang Huang (Huawei):** “I am very proud to participate in OCI to develop this long and exciting project. Thanks to those who contribute in the OCI individuals and companies, the release of OCI V1.0 is great payback of all the efforts. As the cornerstone of the entire container industry, the publication of the OCI standard is to bring positive and favorable changes to the community and ecosystem. I will continue participating in OCI to complement container standards, and look forward to seeing more innovations based on OCI.”
+
+**Mrunal Patel (Red Hat):** “It’s been exciting to work with a talented group of contributors from across the industry on getting the OCI Runtime Specification to 1.0. Containers are becoming a mainstream technology, and standardization can help ensure that applications in a container will be portable across container runtimes. The runC implementation is already at the heart of most container orchestration systems, and we’re now seeing alternative implementations sprout up for specialized workloads enabled by the runtime specification. This is going to be key for container adoption going forward.”
+
+**Brandon Philips (CoreOS):** “CoreOS started the conversation years ago on the container image and runtime specification, and today we are thrilled to have worked alongside the major leaders across the industry to create a stable OCI 1.0,” said Brandon Philips, chair of the OCI Technical Oversight Board and CTO of CoreOS. “With the OCI Runtime Spec, and more importantly, the OCI Image Format Spec, at 1.0 and now mature for broad use, users can expect the OCI to help stabilize a growing market of interoperable, pluggable tools, and should gain confidence that containers are here to stay. And we are actively working with the Kubernetes community to bring this v1.0 OCI release to a future release.”
+
+**Aleksa Sarai (SUSE):** “It has been incredible working with the excellent engineering talent within the OCI development community, and I am excited to continue working with them to innovate on the base we have released thus far. I also cannot wait to see what the wider community builds on top of the OCI specifications, as well as what alternative implementations will be developed by others. Thanks to the interoperability of the OCI specifications, users are free to piece together different components to suit their needs without worry about vendor lock-in. The OCI was the missing piece in driving container adoption and innovation forward.”
+
+**Ma Shimiao (Fujitsu):** “I’m so glad to see the v1.0 release of the OCI specifications after have been working together with the excellent contributors within the OCI community. I believe it’s an important step for container standardization. With rapid growth, it’s inevitable that container technology becomes fragmented. This causes such as portability, vendor lock-in problems. It will be exciting to watch OCI specifications to solve these problems and promote the development of container technology.”
+
+Though we’ve just hit a huge milestone, there is still work to be done. Looking ahead, we’ll be launching a formal [certification](https://github.com/opencontainers/oci-conformance) program later this year as active and ongoing work is underway to bring additional functionality and broader platform support.
+
+If you would like to participate in the OCI, we are always welcoming contributions from across the industry, you can follow us via [@OCI_ORG](https://twitter.com/oci_org?lang=en)!  If you’re interested in contributing to the technology, please join the [OCI developer community](/community) which is open to everyone. If you’re building products on OCI technology, we recommend [joining](/join) as a member and participating in the upcoming [certification program](https://github.com/opencontainers/oci-conformance).
