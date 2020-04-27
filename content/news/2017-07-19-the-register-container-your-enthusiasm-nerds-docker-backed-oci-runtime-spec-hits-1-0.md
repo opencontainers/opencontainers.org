@@ -1,5 +1,5 @@
 ---
-title: The Register – Contain(er) your enthusiasm, nerds: Docker-backed OCI runtime spec hits 1.0
+title: The Register – Contain(er) your enthusiasm, nerds – Docker-backed OCI runtime spec hits 1.0
 author:
   name: Open Container Initiative
   tag: oci
