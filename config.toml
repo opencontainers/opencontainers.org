@@ -1,4 +1,5 @@
 title = "Open Container Initiative"
+baseURL = "https://opencontainers.org"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 copyright = "Cloud Native Computing Foundation"
 

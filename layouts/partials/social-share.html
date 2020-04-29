@@ -1,0 +1,16 @@
+{{ $title := .Title }}
+{{ $url := printf "%s" .URL | absLangURL }}
+{{ $body := print $title ", by " .Site.Title "\n" .Params.description "\n\n" $url "\n" }}
+<div id="sharing">
+  <a href="http://www.facebook.com/sharer.php?u={{ $url }}" class="pl-1" aria-label="share on Facebook">
+    <ion-icon name="logo-facebook"></ion-icon>
+  </a>
+
+  <a href="http://twitter.com/share?url={{ $url }}&text={{ $title }}&via={{with .Site.Social.twitter }}{{ . }}{{ end }}" class="pl-1" aria-label="share on Twitter">
+  <ion-icon name="logo-twitter"></ion-icon>
+  </a>
+
+  <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ $url }}&title={{ $title }}" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' + encodeURIComponent(document.title)); return false;" class="pl-1" aria-label="share on LinkedIn">
+    <ion-icon name="logo-linkedin"></ion-icon>
+  </a>
+</div>
