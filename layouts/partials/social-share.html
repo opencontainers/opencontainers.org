@@ -1,5 +1,5 @@
 {{ $title := .Title }}
-{{ $url := printf "%s" .URL | absLangURL }}
+{{ $url := printf "%s" .Permalink | absLangURL }}
 {{ $body := print $title ", by " .Site.Title "\n" .Params.description "\n\n" $url "\n" }}
 <div id="sharing">
   <a href="http://www.facebook.com/sharer.php?u={{ $url }}" class="pl-1" aria-label="share on Facebook">
