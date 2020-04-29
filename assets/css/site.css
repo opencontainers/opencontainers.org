@@ -5,6 +5,16 @@ body {
   font-weight: 400;
 }
 
+/* Typography */
+
+.lekton {
+  font-family: 'Lekton', sans-serif;
+}
+
+.header-shadow {
+  box-shadow: 4px 4px 26px rgba(0, 0, 0, 0.29);
+}
+
 /* Body content – type */
 
 .content p {
@@ -21,6 +31,7 @@ body {
 
 .content h1 {
   @apply text-3xl pt-8 pb-2 lekton;
+  font-family: 'Lekton', sans-serif;
 }
 
 .content h2 {
@@ -30,10 +41,12 @@ body {
 
 .content h3 {
   @apply text-xl font-bold pt-4 pb-1 lekton;
+  font-family: 'Lekton', sans-serif;
 }
 
 .content h4 {
   @apply text-lg font-bold pt-4 pb-1 lekton;
+  font-family: 'Lekton', sans-serif;
 }
 
 /* General - Footer */
@@ -44,17 +57,6 @@ footer a {
 
 footer a:hover {
   color: #FFFFFF;
-}
-
-
-/* Typography */
-
-.lekton {
-  font-family: 'Lekton', sans-serif;
-}
-
-.header-shadow {
-  box-shadow: 4px 4px 26px rgba(0, 0, 0, 0.29);
 }
 
 /* partials/home/hero.html */
