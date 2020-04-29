@@ -30,23 +30,19 @@ body {
 }
 
 .content h1 {
-  @apply text-3xl pt-8 pb-2 lekton;
-  font-family: 'Lekton', sans-serif;
+  @apply text-3xl pt-8 pb-2;
 }
 
 .content h2 {
-  @apply text-2xl font-bold pt-8 pb-2 lekton;
-  font-family: 'Lekton', sans-serif;
+  @apply text-2xl font-bold pt-8 pb-2;
 }
 
 .content h3 {
-  @apply text-xl font-bold pt-4 pb-1 lekton;
-  font-family: 'Lekton', sans-serif;
+  @apply text-xl font-bold pt-4 pb-1;
 }
 
 .content h4 {
-  @apply text-lg font-bold pt-4 pb-1 lekton;
-  font-family: 'Lekton', sans-serif;
+  @apply text-lg font-bold pt-4 pb-1;
 }
 
 /* General - Footer */
