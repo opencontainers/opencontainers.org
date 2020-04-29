@@ -1,7 +1,10 @@
 {{ define "main" }}
-<article class="text-gray-700 mx-4 sm:mx-12 mt-20 mb-20">
-  <h1>_default/single.html layout</h1>
+<article class="text-gray-700 mt-20 mb-10 bg-white">
+  <div class="single-header bg-darkpurple text-white pt-10 px-10 pb-5 lekton">
     <h1 class="font-bold text-3xl text-gray-700">{{ .Title }}</h1>
+  </div>
+  <div class="content text-base leading-snug px-32 py-24">
     {{ .Content }}
+  </div>
 </article>
 {{ end }}

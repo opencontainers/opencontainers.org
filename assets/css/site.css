@@ -25,6 +25,7 @@ body {
 
 .content h2 {
   @apply text-2xl font-bold pt-8 pb-2 lekton;
+  font-family: 'Lekton', sans-serif;
 }
 
 .content h3 {
