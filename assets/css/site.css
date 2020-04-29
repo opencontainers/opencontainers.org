@@ -5,6 +5,36 @@ body {
   font-weight: 400;
 }
 
+/* Body content – type */
+
+.content p {
+  padding-bottom: 1.4em;
+}
+
+.content a:link {
+  @apply text-lightpurple;
+}
+
+.content a:hover {
+  @apply text-darkpurple;
+}
+
+.content h1 {
+  @apply text-3xl pt-8 pb-2 lekton;
+}
+
+.content h2 {
+  @apply text-2xl font-bold pt-8 pb-2 lekton;
+  font-family: 'Lekton', sans-serif;
+}
+
+.content h3 {
+  @apply text-xl font-bold pt-4 pb-1 lekton;
+}
+
+.content h4 {
+  @apply text-lg font-bold pt-4 pb-1 lekton;
+}
 
 /* General - Footer */
 
