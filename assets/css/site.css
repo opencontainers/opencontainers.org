@@ -55,6 +55,23 @@ footer a:hover {
   color: #FFFFFF;
 }
 
+
+/* partials/top-menu.html */
+
+.child-menu: {
+  background-color: #fff;
+  @apply header-shadow;
+  position: absolute;
+}
+
+.child-menu {
+  display: none;
+}
+
+.parent-menu-item:hover > .child-menu {
+  display: block;
+}
+
 /* partials/home/hero.html */
 
 .hero-btn {
