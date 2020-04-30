@@ -62,12 +62,14 @@ footer a:hover {
   @apply header-shadow;
   position: absolute;
   margin-top: 10px;
-}
-
-.child-menu {
   display: none;
 }
 
+.parent-menu-item {
+  height: 70px;
+  display: flex;
+}
+ 
 .parent-menu-item:hover {
   @apply bg-lightgray;
 }

@@ -1,19 +1,37 @@
-<ul id="nav-menu" class="w-full flex-grow sm:flex items-center sm:w-auto hidden sm:block justify-end list-reset mt-2 sm:mt-0 pr-5">
-    {{ range .Site.Sections }}
-    {{ $currentSection := .Section }}
+{{ $home   := .Site.BaseURL }}
+{{ $here   := .RelPermalink }}
+{{ $main   := .Site.Menus.main }}
+{{ $about   := .Site.Menus.about }}
+
+<ul id="nav-menu" class="w-full flex-grow sm:flex items-center sm:w-auto hidden sm:block justify-end list-reset mt-2 sm:mt-0 pr-20">
+
+{{ with $main }}
+  {{ range . }}
     <li class="parent-menu-item">
-        <a href="{{ .Permalink }}" class="inline-block text-gray-500 sm:px-2 hover:text-lightpurple lekton">{{ .Title }}</a>
-        {{ if not (eq $currentSection "posts") }} <!--don't list posts in the subnav-->
-          {{ range .RegularPages }}
-          <div class="child-menu xs:hidden">
+      {{ $isHere := eq .URL $here }}
+      {{ $isExternal := hasPrefix .URL "http" }}
+      <a class="inline-block text-gray-500 sm:px-2 hover:text-lightpurple lekton navbar-item{{ if $isHere }} is-active{{ end }}" href="{{ .URL }}"{{ if $isExternal }} target="_blank"{{ end }}>
+        {{ .Name }}
+      </a>
+      
+      <div class="child-menu xs:hidden">
+        {{ with $about }}
+          {{ range . }}
             <ul>
               <li>
-                <a href="{{ .Permalink }}" class="inline-block text-gray-500 sm:px-2 hover:text-lightpurple lekton">{{ .Title }}</a>
+                {{ $isHere := eq .URL $here }}
+                {{ $isExternal := hasPrefix .URL "http" }}
+                <a class="inline-block text-gray-500 sm:px-2 hover:text-lightpurple lekton navbar-item{{ if $isHere }} is-active{{ end }}" href="{{ .URL }}"{{ if $isExternal }} target="_blank"{{ end }}>
+                  {{ .Name }}
+                </a>
               </li>
-            </ul>
-          {{ end }}
-          </div>
+            </ul>              
         {{ end }}
+      {{ end }}
+      </div>
     </li>
-    {{ end }}
+  {{ end }}
+{{ end }}
+  
+
 </ul>
