@@ -57,14 +57,19 @@ footer a:hover {
 
 /* partials/top-menu.html */
 
-.child-menu: {
-  background-color: #fff;
+.child-menu {
+  background-color: #ffff;
   @apply header-shadow;
   position: absolute;
+  margin-top: 10px;
 }
 
 .child-menu {
   display: none;
+}
+
+.parent-menu-item:hover {
+  @apply bg-lightgray;
 }
 
 .parent-menu-item:hover > .child-menu {

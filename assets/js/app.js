@@ -14,18 +14,3 @@
 // 
 //   navbarBurger();
 // });
-
-import 'alpinejs'
-
-
-//Javascript to toggle the nav-menu
-document.getElementById('nav-open').onclick = function () {
-    document.getElementById("nav-menu").classList.toggle("hidden");
-    document.getElementById("nav-open").classList.toggle("hidden");
-    document.getElementById("nav-close").classList.toggle("hidden");
-}
-document.getElementById('nav-close').onclick = function () {
-    document.getElementById("nav-menu").classList.toggle("hidden");
-    document.getElementById("nav-close").classList.toggle("hidden");
-    document.getElementById("nav-open").classList.toggle("hidden");
-}

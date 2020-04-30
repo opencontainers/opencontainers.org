@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.0",
-    "alpinejs": "^2.3.1",
     "autoprefixer": "^9.7.5",
     "postcss": "^7.0.27",
     "postcss-cli": "^7.1.0",

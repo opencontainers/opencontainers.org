@@ -1,11 +1,11 @@
-<ul id="nav-menu" class="w-full flex-grow sm:flex items-center sm:w-auto hidden sm:block justify-end list-reset mt-2 sm:mt-0">
+<ul id="nav-menu" class="w-full flex-grow sm:flex items-center sm:w-auto hidden sm:block justify-end list-reset mt-2 sm:mt-0 pr-5">
     {{ range .Site.Sections }}
     {{ $currentSection := .Section }}
     <li class="parent-menu-item">
         <a href="{{ .Permalink }}" class="inline-block text-gray-500 sm:px-2 hover:text-lightpurple lekton">{{ .Title }}</a>
         {{ if not (eq $currentSection "posts") }} <!--don't list posts in the subnav-->
           {{ range .RegularPages }}
-          <div class="child-menu">
+          <div class="child-menu xs:hidden">
             <ul>
               <li>
                 <a href="{{ .Permalink }}" class="inline-block text-gray-500 sm:px-2 hover:text-lightpurple lekton">{{ .Title }}</a>
