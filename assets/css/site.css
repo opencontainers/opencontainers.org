@@ -17,6 +17,10 @@ body {
 
 /* Body content – type */
 
+.content {
+  @apply text-base leading-snug;
+}
+
 .content p {
   padding-bottom: 1.4em;
 }
@@ -57,6 +61,12 @@ footer a {
 
 footer a:hover {
   color: #FFFFFF;
+}
+
+/* single.html  */
+
+.single-header {
+   @apply text-white bg-darkpurple lekton;
 }
 
 /* partials/top-menu.html */

@@ -1,13 +1,13 @@
 {{ define "main" }}
-<article class="mt-20 mb-10 text-gray-700 bg-white">
-  <div class="px-10 pt-10 pb-5 text-white single-header bg-darkpurple lekton">
-    <h1 class="text-3xl font-bold text-gray-700">{{ .Title }}</h1>
+<article class="mt-20 mb-10">
+  <div class="px-10 pt-10 pb-5 single-header">
+    <h1 class="text-3xl font-bold">{{ .Title }}</h1>
     <p class="pb-5 meta">{{ .Date.Format "Monday, January 2, 2006" }} by {{ $.Param "author.name" }}</p>
     <div class="share">
       {{ partial "social-share.html" . }}
     </div>
   </div>
-  <div class="px-32 py-24 text-base leading-snug content">
+  <div class="px-32 py-24 bg-white content">
     {{ .Content }}
   </div>
 </article>
