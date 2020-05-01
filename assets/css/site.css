@@ -47,6 +47,10 @@ body {
 
 /* General - Footer */
 
+footer {
+  @apply text-xs text-white bg-darkpurple;
+}
+
 footer a {
   color: #837BFF;
 }
