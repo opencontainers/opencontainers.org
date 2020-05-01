@@ -1,7 +1,5 @@
 {{ define "main" }}
 {{ partial "home/hero.html" . }}
 {{ partial "home/trio.html" . }}
-<article class="text-center text-gray-700">
-    {{ .Content }}
-</article>
+{{ partial "home/newsfeed.html" . }}
 {{ end }}

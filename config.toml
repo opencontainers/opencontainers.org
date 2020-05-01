@@ -4,6 +4,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 copyright = "Cloud Native Computing Foundation"
 
 enableGitInfo = true
+summaryLength = 15
 
 [markup.highlight]
 style = "paraiso-dark"
