@@ -14,7 +14,7 @@ module.exports = {
       cyan: '#53DDD5'
     },
     screens: {
-      'xs': '380px',
+      'xs': '375px',
       'sm': '540px',
       'md': '720px',
       'lg': '920px',

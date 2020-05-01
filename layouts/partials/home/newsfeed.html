@@ -2,7 +2,7 @@
 <h1 class="text-4xl col-span-12 mb-6 lekton">Latest News</h1>
 {{ $postsSection := where .Site.RegularPages "Section" "posts" }} <!-- "getting-started" and "deployment" -->
 {{ range $postsSection | first 3 }}
-    <article class="sm:col-span-12 md:col-span-12 lg:col-span-4 mx-4 mb-4 sm:mx-12">
+    <article class="xs:col-span-12 lg:col-span-4 mx-4 mb-4 sm:mx-12">
       <p class="meta pb-5 lekton">{{ .Date.Format "2006-01-02" }} in {{ .Params.tags | title }}</p>
         <h2 class="text-base font-bold pb-4"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         <p>{{ .Summary }}</p>
