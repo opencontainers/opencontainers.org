@@ -1,8 +1,11 @@
-{{ $postsSection := where .Site.Pages "Section" "posts" }} <!-- "getting-started" and "deployment" -->
+{{ $postsSection := where .Site.RegularPages "Section" "posts" }} <!-- "getting-started" and "deployment" -->
 {{ range $postsSection | first 3 }}
     <article class="mx-4 mb-4 text-gray-700 sm:mx-12">
         <h1 class="text-3xl font-thin font-bold text-gray-700"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-        <p class="meta pb-5">{{ .Date.Format "Monday, January 2, 2006" }}</p>
+        <p class="meta pb-5">{{ .Date.Format "Monday, January 2, 2006" }} in {{ .Params.tags | title }}</p>
         {{ .Summary }}
+        <a href ="{{ .Permalink }}" class="bg-lightpurple hover:bg-mediumpurple shadow-md lekton text-base p-2 text-white">
+          Read more <ion-icon name="arrow-forward-sharp" class="align-middle"></ion-icon>
+        </a>
     </article>
 {{ end }}
