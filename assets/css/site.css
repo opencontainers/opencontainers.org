@@ -99,8 +99,16 @@ footer a:hover {
   }
 }
 
-#nav-open, #nav-close {
-  padding-right: 10px;
+input#nav-toggle:checked~label#show-button {
+    display: none;
+}
+
+input#nav-toggle:checked~label#hide-button {
+    display: flex;
+}
+
+input#nav-toggle:checked~#nav-menu {
+    display: block;
 }
 
 /* partials/home/hero.html */

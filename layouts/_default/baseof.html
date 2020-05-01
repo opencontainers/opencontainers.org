@@ -10,19 +10,6 @@
       
         {{ $app := resources.Get "js/app.js" | fingerprint }}
         <script src="{{ $app.RelPermalink }}" integrity="{{ $app.Data.Integrity }}"></script>    
-        <script>
-          //Javascript to toggle the nav-menu
-          document.getElementById('nav-open').onclick = function () {
-              document.getElementById("nav-menu").classList.toggle("hidden");
-              document.getElementById("nav-open").classList.toggle("hidden");
-              document.getElementById("nav-close").classList.toggle("hidden");
-          }
-          document.getElementById('nav-close').onclick = function () {
-              document.getElementById("nav-menu").classList.toggle("hidden");
-              document.getElementById("nav-close").classList.toggle("hidden");
-              document.getElementById("nav-open").classList.toggle("hidden");
-          }
-        </script>
         <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     </body>
 </html>
