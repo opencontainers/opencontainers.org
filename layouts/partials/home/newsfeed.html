@@ -1,0 +1,8 @@
+{{ $postsSection := where .Site.Pages "Section" "posts" }} <!-- "getting-started" and "deployment" -->
+{{ range $postsSection | first 3 }}
+    <article class="mx-4 mb-4 text-gray-700 sm:mx-12">
+        <h1 class="text-3xl font-thin font-bold text-gray-700"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+        <p class="meta pb-5">{{ .Date.Format "Monday, January 2, 2006" }}</p>
+        {{ .Summary }}
+    </article>
+{{ end }}
