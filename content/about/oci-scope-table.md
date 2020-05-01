@@ -1,5 +1,8 @@
 ---
 title: "OCI Scope table"
+menu: 
+  about:
+    weight: 60
 ---
 ## OCI Scope Table: Examples of possible projects
 

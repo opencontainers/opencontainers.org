@@ -1,0 +1,52 @@
+{{ $home   := .Site.BaseURL }}
+{{ $here   := .RelPermalink }}
+{{ $main   := .Site.Menus.main }}
+{{ $about   := .Site.Menus.about }}
+
+<ul id="nav-menu" class="w-full flex-grow md:flex-row sm:flex-row sm:flex items-center sm:w-auto hidden sm:block justify-end list-reset mt-2 sm:mt-0">
+{{ with $main }}
+  {{ range . }}
+  
+    {{ $isHere := eq .URL $here }}
+    {{ $isExternal := hasPrefix .URL "http" }}
+  
+    <li class="parent-menu-item sm:self-start">
+      
+      <a class="inline-block text-gray-500 sm:px-2 hover:text-lightpurple lekton navbar-item{{ if $isHere }} is-active{{ end }}" href="{{ .URL }}"{{ if $isExternal }} target="_blank"{{ end }}>
+        {{ .Name }}
+        {{ if .HasChildren }}
+          <ion-icon name="chevron-down-sharp" class="align-middle"></ion-icon>
+        {{ end }}
+      </a>
+      
+      {{ if .HasChildren }}
+        <div class="child-menu p-2">
+              <ul>
+              {{ with $about }}
+                {{ range . }}
+                <li>
+                  {{ $isHere := eq .URL $here }}
+                  {{ $isExternal := hasPrefix .URL "http" }}
+                  <a class="inline-block text-gray-500 sm:px-2 hover:text-lightpurple lekton navbar-item{{ if $isHere }} is-active{{ end }}" href="{{ .URL }}"{{ if $isExternal }} target="_blank"{{ end }}>
+                    {{ .Name }}
+                  </a>
+                </li>
+                {{ end }}
+              {{ end }}
+              
+                {{ range .Children }}
+                <li>
+                  <a class="inline-block text-gray-500 sm:px-2 hover:text-lightpurple lekton navbar-item{{ if $isHere }} is-active{{ end }}" href="{{ .URL }}"{{ if $isExternal }} target="_blank"{{ end }}>
+                    {{ .Name }}
+                  </a>
+                </li>
+                {{ end }}
+              </ul>              
+        </div>
+      {{ end }}
+    </li>
+  {{ end }}
+{{ end }}
+  
+
+</ul>

@@ -1,3 +1,3 @@
 ---
-title: "FAQs"
+title: "FAQ"
 ---

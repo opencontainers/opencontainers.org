@@ -48,17 +48,59 @@ name = "Fire Sans"
 sizes = [100, 200, 300, 400, 500, 600, 700]
 type = "heading_font"
 
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
+
+[menu]
 
 [[menu.main]]
-name = "CNCF"
-url = "https://cncf.io"
-weight = 2
+name = "About"
+identifier ="about"
+url = "/about"
+weight = 10
+
+  [[menu.main]]
+  name = "Governance"
+  parent = "about"
+  url = "https://github.com/opencontainers/tob/blob/master/CHARTER.md"
+  weight = 20
+
+  [[menu.main]]
+  name = "Code of conduct"
+  parent = "about"
+  url = "https://github.com/opencontainers/.github/blob/master/CODE_OF_CONDUCT.md"
+  weight = 30
+  
+[[menu.main]]
+name = "Community"
+identifier ="community"
+url = "/community"
+weight = 20
 
 [[menu.main]]
-name = "Test"
-url = "/docs/test-content/"
-weight = 3
+name = "Join"
+identifier ="join"
+url = "/join"
+weight = 30
+
+[[menu.main]]
+name = "Blog"
+identifier ="blog"
+url = "/blog"
+weight = 40
+
+[[menu.main]]
+name = "News"
+identifier ="news"
+url = "/posts"
+weight = 50
+
+[[menu.main]]
+name = "FAQ"
+identifier ="faq"
+url = "/faq"
+weight = 60
+
+[[menu.main]]
+name = "Release notices"
+identifier ="releases"
+url = "/releases"
+weight = 80
