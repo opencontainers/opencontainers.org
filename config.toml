@@ -86,3 +86,21 @@ name = "Blog"
 identifier ="blog"
 url = "/blog"
 weight = 40
+
+[[menu.main]]
+name = "News"
+identifier ="news"
+url = "/posts"
+weight = 50
+
+[[menu.main]]
+name = "FAQ"
+identifier ="faq"
+url = "/faq"
+weight = 60
+
+[[menu.main]]
+name = "Release notices"
+identifier ="releases"
+url = "/releases"
+weight = 80

@@ -57,19 +57,24 @@ footer a:hover {
 
 /* partials/top-menu.html */
 
-.child-menu {
-  background-color: #ffff;
-  @apply header-shadow;
-  position: absolute;
-  margin-top: 10px;
-  display: none;
-}
-
 .parent-menu-item {
-  height: 70px;
+  height: 49px;
   display: flex;
+  align-items: center;
 }
  
+.child-menu {
+  background-color: #ffff;
+  position: absolute;
+  margin-top: 49px;
+  display: none;
+  align-self: baseline;
+}
+
+.navbar-item {
+  width: 100%;
+}
+
 .parent-menu-item:hover {
   @apply bg-lightgray;
 }
@@ -92,21 +97,18 @@ footer a:hover {
   .hero-img {
     @apply hidden;
   }
-
 }
 
 @screen md {
   .hero-img {
     @apply block col-span-12 px-10;
   }
-
 }
 
 @screen lg {
   .hero-img {
     @apply block col-span-5; 
   }
-
 }
 
 /* partials/home/trio.html */
