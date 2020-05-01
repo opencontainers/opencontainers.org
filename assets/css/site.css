@@ -79,8 +79,28 @@ footer a:hover {
   @apply bg-lightgray;
 }
 
-.parent-menu-item:hover > .child-menu {
-  display: block;
+@screen sm {
+  .child-menu {
+    background-color: #ffff;
+    display: block;
+  }
+}
+
+@screen md {
+  .parent-menu-item:hover > .child-menu {
+    display: block;
+  }
+  .child-menu {
+    background-color: #ffff;
+    position: absolute;
+    margin-top: 49px;
+    display: none;
+    align-self: baseline;
+  }
+}
+
+#nav-open, #nav-close {
+  padding-right: 10px;
 }
 
 /* partials/home/hero.html */

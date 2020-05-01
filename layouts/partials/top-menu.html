@@ -4,7 +4,6 @@
 {{ $about   := .Site.Menus.about }}
 
 <ul id="nav-menu" class="w-full flex-grow sm:flex items-center sm:w-auto hidden sm:block justify-end list-reset mt-2 sm:mt-0 pr-10">
-
 {{ with $main }}
   {{ range . }}
   
@@ -15,10 +14,13 @@
       
       <a class="inline-block text-gray-500 sm:px-2 hover:text-lightpurple lekton navbar-item{{ if $isHere }} is-active{{ end }}" href="{{ .URL }}"{{ if $isExternal }} target="_blank"{{ end }}>
         {{ .Name }}
+        {{ if .HasChildren }}
+          <ion-icon name="chevron-down-sharp" class="align-middle"></ion-icon>
+        {{ end }}
       </a>
       
       {{ if .HasChildren }}
-        <div class="child-menu xs:hidden">
+        <div class="child-menu p-2">
           {{ with $about }}
             {{ range . }}
               <ul>
