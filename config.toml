@@ -57,13 +57,13 @@ identifier ="about"
 url = "/about"
 weight = 10
 
-  [[menu.about]]
+  [[menu.main]]
   name = "Governance"
   parent = "about"
   url = "https://github.com/opencontainers/tob/blob/master/CHARTER.md"
   weight = 20
 
-  [[menu.about]]
+  [[menu.main]]
   name = "Code of conduct"
   parent = "about"
   url = "https://github.com/opencontainers/.github/blob/master/CODE_OF_CONDUCT.md"
