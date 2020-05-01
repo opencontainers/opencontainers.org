@@ -3,7 +3,7 @@
 {{ $main   := .Site.Menus.main }}
 {{ $about   := .Site.Menus.about }}
 
-<ul id="nav-menu" class="w-full flex-grow md:flex-row sm:flex-row sm:flex items-center sm:w-auto hidden sm:block justify-end list-reset mt-2 sm:mt-0">
+<ul id="nav-menu" class="items-center justify-end flex-grow hidden w-full mt-2 md:flex-row sm:flex-row sm:flex sm:w-auto sm:block list-reset sm:mt-0">
 {{ with $main }}
   {{ range . }}
   
@@ -20,7 +20,7 @@
       </a>
       
       {{ if .HasChildren }}
-        <div class="child-menu p-2">
+        <div class="p-2 child-menu">
               <ul>
               {{ with $about }}
                 {{ range . }}
