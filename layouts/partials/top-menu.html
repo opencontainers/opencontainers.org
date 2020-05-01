@@ -3,14 +3,14 @@
 {{ $main   := .Site.Menus.main }}
 {{ $about   := .Site.Menus.about }}
 
-<ul id="nav-menu" class="w-full flex-grow sm:flex items-center sm:w-auto hidden sm:block justify-end list-reset mt-2 sm:mt-0 pr-10">
+<ul id="nav-menu" class="w-full flex-grow md:flex-row sm:flex-row sm:flex items-center sm:w-auto hidden sm:block justify-end list-reset mt-2 sm:mt-0">
 {{ with $main }}
   {{ range . }}
   
     {{ $isHere := eq .URL $here }}
     {{ $isExternal := hasPrefix .URL "http" }}
   
-    <li class="parent-menu-item">
+    <li class="parent-menu-item sm:self-start">
       
       <a class="inline-block text-gray-500 sm:px-2 hover:text-lightpurple lekton navbar-item{{ if $isHere }} is-active{{ end }}" href="{{ .URL }}"{{ if $isExternal }} target="_blank"{{ end }}>
         {{ .Name }}

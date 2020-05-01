@@ -57,22 +57,8 @@ footer a:hover {
 
 /* partials/top-menu.html */
 
-.parent-menu-item {
-  height: 49px;
-  display: flex;
-  align-items: center;
-}
- 
 .child-menu {
   background-color: #ffff;
-  position: absolute;
-  margin-top: 49px;
-  display: none;
-  align-self: baseline;
-}
-
-.navbar-item {
-  width: 100%;
 }
 
 .parent-menu-item:hover {
@@ -80,13 +66,16 @@ footer a:hover {
 }
 
 @screen sm {
-  .child-menu {
-    background-color: #ffff;
-    display: block;
+  .navbar-item {
+    width: 100%;
   }
-}
-
-@screen md {
+  
+  .parent-menu-item {
+    height: 49px;
+    display: flex;
+    align-items: center;
+  }
+   
   .parent-menu-item:hover > .child-menu {
     display: block;
   }
