@@ -55,7 +55,7 @@ type = "heading_font"
 [[menu.main]]
 name = "About"
 identifier ="about"
-url = "/about"
+url = "#"
 weight = 10
 
   [[menu.main]]
