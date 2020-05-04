@@ -1,14 +1,17 @@
 {{ define "main" }}
 {{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }}
 
-<div class="mt-20 mb-10 grid grid-cols-2 gap-4">
-  <div class="px-10 pt-10 pb-5 col-span-2 single-header">
+<div class="grid grid-cols-2 gap-4 mt-20 mb-10">
+  <div class="col-span-2 px-10 pt-10 pb-5 single-header">
     {{ partial "single-title.html" . }}
   </div>
-    {{ range $paginator.Pages }}
-      <article class="col-span-1 bg-white p-10">
-        {{ partial "feed-item.html" . }}
-      </article>
-    {{ end }}
+  {{ range $paginator.Pages }}
+    <article class="col-span-1 p-10 bg-white">
+      {{ partial "feed-item.html" . }}
+    </article>
+  {{ end }}
+  <div class="col-span-2">
+    {{ partial "page-numbers.html" . }}
+  </div>
 </div>
 {{ end }}
