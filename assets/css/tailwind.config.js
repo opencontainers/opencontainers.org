@@ -13,6 +13,13 @@ module.exports = {
       lightpurple: '#837BFF',
       cyan: '#53DDD5'
     },
+    screens: {
+      'xs': '375px',
+      'sm': '540px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px'
+    },
     extend: {}
   },
   variants: {},
