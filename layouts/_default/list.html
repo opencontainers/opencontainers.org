@@ -1,10 +1,12 @@
 {{ define "main" }}
-<article class="mt-20 mb-10">
-  <div class="px-10 pt-10 pb-5 single-header">
+<div class="mt-20 mb-10 grid grid-cols-2 gap-4">
+  <div class="px-10 pt-10 pb-5 col-span-2 single-header">
     {{ partial "single-title.html" . }}
   </div>
-{{ range .Pages }}
-
-{{ end }}
+    {{ range .Pages }}
+      <article class="col-span-1 bg-white p-10">
+        {{ partial "feed-item.html" . }}
+      </article>
+    {{ end }}
 </div>
 {{ end }}
