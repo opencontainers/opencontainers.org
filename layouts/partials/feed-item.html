@@ -1,0 +1,6 @@
+<p class="meta pb-5 lekton">{{ .Date.Format "2006-01-02" }} in {{ .Params.tags | title }}</p>
+<h2 class="text-base font-bold pb-4"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+<p>{{ .Summary }}</p>
+<a href ="{{ .Permalink }}" class="hero-btn text-base">
+  Read more <ion-icon name="arrow-forward-sharp" class="align-middle"></ion-icon>
+</a>

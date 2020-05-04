@@ -1,8 +1,10 @@
 {{ define "main" }}
+<article class="mt-20 mb-10">
+  <div class="px-10 pt-10 pb-5 single-header">
+    {{ partial "single-title.html" . }}
+  </div>
 {{ range .Pages }}
-    <article class="mx-4 mb-4 text-gray-700 sm:mx-12">
-        <h1 class="text-3xl font-thin font-bold text-gray-700"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-        {{ .Content }}
-    </article>
+
 {{ end }}
+</div>
 {{ end }}

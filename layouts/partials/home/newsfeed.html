@@ -3,12 +3,7 @@
 {{ $postsSection := where .Site.RegularPages "Section" "posts" }} <!-- "getting-started" and "deployment" -->
 {{ range $postsSection | first 3 }}
     <article class="xs:col-span-12 lg:col-span-4 mx-4 mb-4 sm:mx-12">
-      <p class="meta pb-5 lekton">{{ .Date.Format "2006-01-02" }} in {{ .Params.tags | title }}</p>
-        <h2 class="text-base font-bold pb-4"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <p>{{ .Summary }}</p>
-        <a href ="{{ .Permalink }}" class="hero-btn text-base">
-          Read more <ion-icon name="arrow-forward-sharp" class="align-middle"></ion-icon>
-        </a>
+      {{ partial "feed-item.html" . }}
     </article>
 {{ end }}
 </div>
