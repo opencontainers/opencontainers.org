@@ -6,11 +6,11 @@
     {{ partial "single-title.html" . }}
   </div>
   {{ range $paginator.Pages }}
-    <article class="col-span-1 p-10 bg-white">
+    <article class="col-span-1 p-5 bg-white">
       {{ partial "feed-item.html" . }}
     </article>
   {{ end }}
-  <div class="col-span-2">
+  <div class="col-span-2 flex flex-grow items-center">
     {{ partial "page-numbers.html" . }}
   </div>
 </div>
