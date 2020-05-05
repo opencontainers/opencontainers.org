@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Lekton:400,400i,700|Open+Sans:400,400i,700,700i&display=swap&subset=latin-ext');
+
 /* Tailwind base - put variables under: tailwind.config.js */
 @import "node_modules/tailwindcss/base";
-
-@import url('https://fonts.googleapis.com/css?family=Lekton:400,400i,700|Open+Sans:400,400i,700,700i&display=swap&subset=latin-ext');
 
 /* Tailwind component classes registered by plugins*/
 @import "node_modules/tailwindcss/components";
