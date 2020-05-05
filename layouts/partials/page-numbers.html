@@ -6,11 +6,11 @@
 {{ $upper_limit := (sub $paginator.TotalPages $adjacent_links) }}
 {{ if gt $paginator.TotalPages 1 }}
 
-    <ul>
+    <ul class="lekton">
       <!-- First page. -->
       {{ if ne $paginator.PageNumber 1 }}
       <li class="inline-block">
-        <a class="pagination__link pagination__link--first" href="{{ $paginator.First.URL }}">
+        <a  href="{{ $paginator.First.URL }}" class="p-2 hover:text-mediumpurple">
           ««
         </a>
       </li>
@@ -18,7 +18,7 @@
       <!-- Previous page. -->
       {{ if $paginator.HasPrev }}
       <li class="inline-block">
-        <a href="{{ $paginator.Prev.URL }}" class="pagination__link pagination__link--previous">
+        <a href="{{ $paginator.Prev.URL }}" class="hover:text-mediumpurple">
           «
         </a>
       </li>
@@ -55,8 +55,8 @@
 
         <!-- Output page numbers. -->
         {{ if eq ($.Scratch.Get "page_number_flag") true }}
-          <li class="inline-block pagination__item{{ if eq . $paginator }} pagination__item--current{{ end }}">
-            <a href="{{ .URL }}" class="pagination__link">
+          <li class="inline-block">
+            <a href="{{ .URL }}" class="p-2 bg-white hover:bg-mediumpurple hover:text-white {{ if eq . $paginator }}bg-lightpurple text-white{{ end }}">
               {{ .PageNumber }}
             </a>
           </li>
@@ -64,16 +64,16 @@
       {{ end }}
       <!-- Next page. -->
       {{ if $paginator.HasNext }}
-      <li class="inline-block pagination__item pagination__item--next">
-        <a href="{{ $paginator.Next.URL }}" class="pagination__link pagination__link--next">
+      <li class="inline-block">
+        <a href="{{ $paginator.Next.URL }}" class="p-2 hover:text-mediumpurple">
           »
         </a>
       </li>
       {{ end }}
       <!-- Last page. -->
       {{ if ne $paginator.PageNumber $paginator.TotalPages }}
-      <li class="inline-block pagination__item pagination__item--last">
-        <a class="pagination__link pagination__link--last" href="{{ $paginator.Last.URL }}">
+      <li class="inline-block">
+        <a href="{{ $paginator.Last.URL }}" class="p-2 hover:text-mediumpurple">
           »»
         </a>
       </li>
