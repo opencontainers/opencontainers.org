@@ -26,12 +26,12 @@ module.exports = {
     require('postcss-reporter'),
     require('postcss-font-magician')({
         variants: {
-          'Open Sans' {
+          'Open Sans': {
             '400': [],
             '400i': [],
             '700': []
           },
-          'Lekton' {
+          'Lekton': {
             '400': [],
             '400i': [],
             '700': []
