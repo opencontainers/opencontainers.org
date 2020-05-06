@@ -7,9 +7,9 @@
         {{- block "main" . }}{{- end }}
         </main>
         {{- partial "footer.html" . -}}
-      
+
         {{ $app := resources.Get "js/app.js" | fingerprint }}
-        <script src="{{ $app.RelPermalink }}" integrity="{{ $app.Data.Integrity }}"></script>     
+        <script src="{{ $app.RelPermalink }}" integrity="{{ $app.Data.Integrity }}"></script>
         <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     </body>
 </html>

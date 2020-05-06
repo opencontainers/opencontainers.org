@@ -19,4 +19,4 @@ preview-build:
 		--minify
 
 open:
-	open https://cncf-hugo-starter.netlify.com
+	open https://opencontainers.netlify.app

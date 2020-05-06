@@ -1,23 +1,29 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>{{ block "title" . }}
-{{- .Title }} - {{ .Site.Title -}}
-{{ end }}</title>
-{{ if .Description }}
-<meta name="description" content="{{ .Description }}" />
+<title>
+  {{ block "title" . }}
+  {{- .Title }} - {{ .Site.Title -}}
+  {{ end }}
+</title>
+
+{{ with .Description }}
+<meta name="description" content="{{ . }}" />
 {{ end }}
-{{ if .Keywords }}
-<meta name="keywords" content="{{ delimit .Keywords "," }}" />
+{{ with .Keywords }}
+<meta name="keywords" content="{{ delimit . "," }}" />
 {{ end }}
-{{ if .Params.Author }}
-<meta name="author" content="{{ .Params.Author}}" />
+{{ with .Params.Author }}
+<meta name="author" content="{{ . }}" />
 {{ end }}
-{{ hugo.Generator }}
+
+{{ $styles := resources.Get "css/styles.css" }}
 
 {{ if .Site.IsServer }}
-    {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/dev/postcss.config.js") }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+  {{ $style := $styles | postCSS (dict "config" "./assets/css/dev/postcss.config.js") }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 {{ else }}
-    {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+  {{ $style := $styles | postCSS (dict "config" "./assets/css/postcss.config.js") | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
 {{ end }}
+
+{{ hugo.Generator }}
