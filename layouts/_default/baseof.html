@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang='{{ .Site.LanguageCode }}'>
-    {{- partial "head.html" . -}}
-    <body class="flex flex-col min-h-screen bg-lightgray">
-        {{- partial "header.html" . -}}
-        <main class="container mx-auto">
-        {{- block "main" . }}{{- end }}
-        </main>
-        {{- partial "footer.html" . -}}
+<html lang='{{ site.LanguageCode }}'>
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body class="flex flex-col min-h-screen bg-lightgray">
+    {{ partial "header.html" . }}
 
-        {{ $app := resources.Get "js/app.js" | fingerprint }}
-        <script src="{{ $app.RelPermalink }}" integrity="{{ $app.Data.Integrity }}"></script>
-        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    </body>
+    <main class="container mx-auto">
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ partial "footer.html" . }}
+    {{ partial "javascript.html" . }}
+  </body>
 </html>

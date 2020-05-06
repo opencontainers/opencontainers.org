@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
   {{ block "title" . }}
-  {{- .Title }} - {{ .Site.Title -}}
+  {{ .Title }} - {{ site.Title }}
   {{ end }}
 </title>
 
@@ -18,7 +18,7 @@
 
 {{ $styles := resources.Get "css/styles.css" }}
 
-{{ if .Site.IsServer }}
+{{ if site.IsServer }}
   {{ $style := $styles | postCSS (dict "config" "./assets/css/dev/postcss.config.js") }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 {{ else }}
