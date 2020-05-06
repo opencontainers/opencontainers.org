@@ -1,0 +1,4 @@
+---
+title: Announcements
+aliases: /announcements/
+---

@@ -1,11 +1,9 @@
 {{ define "main" }}
 <article class="mt-20 mb-10">
   <div class="px-10 pt-10 pb-5 single-header">
-    <h1 class="text-3xl font-bold">{{ .Title }}</h1>
+    {{ partial "single-title.html" . }}
     <p class="pb-5 meta">{{ .Date.Format "Monday, January 2, 2006" }} by {{ $.Param "author.name" }}</p>
-    <div class="share">
-      {{ partial "social-share.html" . }}
-    </div>
+    {{ partial "social-share.html" . }}
   </div>
   <div class="px-32 py-24 bg-white content">
     {{ .Content }}

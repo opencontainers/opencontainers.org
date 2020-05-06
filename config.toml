@@ -55,7 +55,7 @@ type = "heading_font"
 [[menu.main]]
 name = "About"
 identifier ="about"
-url = "/about"
+url = "#"
 weight = 10
 
   [[menu.main]]
@@ -127,8 +127,26 @@ weight = 40
 [[menu.main]]
 name = "News"
 identifier ="news"
-url = "/posts"
+url = "#"
 weight = 50
+
+[[menu.main]]
+  name = "Announcements"
+  parent ="news"
+  url = "/announcements/"
+  weight = 10
+
+  [[menu.main]]
+  name = "In the news"
+  parent ="news"
+  url = "/news/"
+  weight = 20
+  
+  [[menu.main]]
+  name = "Blog"
+  parent ="news"
+  url = "/blog/"
+  weight = 30
 
 [[menu.main]]
 name = "FAQ"
