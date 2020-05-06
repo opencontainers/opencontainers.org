@@ -131,6 +131,24 @@ url = "/posts"
 weight = 50
 
 [[menu.main]]
+  name = "Announcements"
+  parent ="news"
+  url = "/posts/announcements"
+  weight = 10
+
+  [[menu.main]]
+  name = "In the news"
+  parent ="news"
+  url = "/posts/news"
+  weight = 20
+  
+  [[menu.main]]
+  name = "Blog"
+  parent ="news"
+  url = "/posts/blog"
+  weight = 30
+
+[[menu.main]]
 name = "FAQ"
 identifier ="faq"
 url = "/faq"
