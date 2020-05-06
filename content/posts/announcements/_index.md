@@ -1,6 +1,4 @@
 ---
 title: Announcements
-menu:
-  blog:
-    weight: 10
+aliases: /announcements/
 ---

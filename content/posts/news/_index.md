@@ -1,6 +1,4 @@
 ---
-Title: In the news 
-menu:
-  blog:
-    weight: 30
+title: News & Press Releases
+aliases: /news/
 --- 
