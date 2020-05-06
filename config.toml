@@ -59,22 +59,58 @@ url = "/about"
 weight = 10
 
   [[menu.main]]
+  name = "Members"
+  parent = "about"
+  url = "/about/members"
+  weight = 20
+
+  [[menu.main]]
   name = "Governance"
   parent = "about"
   url = "https://github.com/opencontainers/tob/blob/master/CHARTER.md"
-  weight = 20
+  weight = 30
 
   [[menu.main]]
   name = "Code of conduct"
   parent = "about"
   url = "https://github.com/opencontainers/.github/blob/master/CODE_OF_CONDUCT.md"
-  weight = 30
+  weight = 40
+  
+  [[menu.main]]
+  name = "Technical oversight board"
+  parent = "about"
+  url = "/about/tob"
+  weight = 50
+  
+  [[menu.main]]
+  name = "Leadership"
+  parent = "about"
+  url = "/about/leadership"
+  weight = 60
+  
+  [[menu.main]]
+  name = "Leadership"
+  parent = "about"
+  url = "/about/leadership"
+  weight = 60
+  
+  [[menu.main]]
+  name = "Security disclosure"
+  parent = "about"
+  url = "/about/security-disclosure"
+  weight = 70
   
 [[menu.main]]
 name = "Community"
 identifier ="community"
 url = "/community"
 weight = 20
+
+  [[menu.main]]
+  name = "Certification program"
+  parent = "community"
+  url = "/community/certified"
+  weight = 10
 
 [[menu.main]]
 name = "Join"
