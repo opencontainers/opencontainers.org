@@ -3,6 +3,7 @@ title: Open Sourcing runc Security Audit
 author:
   name: Amye Scavarda Perrin
   tag: ascavarda
+tags: news
 date: 2020-01-31
 ---
 
