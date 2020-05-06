@@ -24,5 +24,20 @@ module.exports = {
       grid: true
     }),
     require('postcss-reporter'),
+    require('postcss-font-magician')({
+        variants: {
+          'Open Sans': {
+            '400': [],
+            '400i': [],
+            '700': []
+          },
+          'Lekton': {
+            '400': [],
+            '400i': [],
+            '700': []
+          }
+        },
+        foundries: ['google']
+    }),
   ]
 }

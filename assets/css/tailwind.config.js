@@ -1,7 +1,4 @@
 module.exports = {
-  corePlugins: {
-    fontFamily: false
-  },
   theme: {
     colors: {
       white: '#FFFFFF',
