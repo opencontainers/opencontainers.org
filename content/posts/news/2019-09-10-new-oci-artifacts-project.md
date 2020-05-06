@@ -4,7 +4,9 @@ author:
   name: Steve Lasker
   tag: slasker
   twitter: stevelasker
+tags: news
 date: 2019-09-10
+
 ---
 
 The OCI Technical Oversight Board (TOB) has [approved](https://github.com/opencontainers/tob/blob/master/proposals/artifacts.md) a new Artifacts project, utilizing the [OCI manifest](https://github.com/opencontainers/image-spec/blob/master/manifest.md) and [OCI index](https://github.com/opencontainers/image-spec/blob/master/image-index.md) definitions, new artifact types can be stored and served using the [OCI distribution-spec](https://github.com/opencontainers/distribution-spec/) without changing the actual distribution spec. This repository will provide a reference for artifact authors and registry implementers for supporting these new artifact types themselves with the existing implementations of distribution.
