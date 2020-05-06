@@ -1,8 +1,10 @@
 {{ define "main" }}
-{{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }}
+{{ $posts := .Site.RegularPages }}
+{{ $paginator := .Paginate $posts }}
 <div class="grid grid-cols-2 gap-4 mt-20 mb-10">
   <div class="col-span-2 px-10 pt-10 pb-5 single-header">
     {{ partial "single-title.html" . }}
+    <p class="pb-5 meta">Browse by subcategory: <a class="hover:text-lightpurple" href="/announcements/">Announcements</a>, <a class="hover:text-lightpurple" href="/news/">News and press releases</a>, <a class="hover:text-lightpurple" href="/blog/">Blog posts</a></p>
   </div>
   {{ range $paginator.Pages }}
     <article class="xs:col-span-2 lg:col-span-1 p-5 bg-white">
