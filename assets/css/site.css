@@ -5,6 +5,10 @@ body {
   font-weight: 400;
 }
 
+header {
+  z-index: 9999;
+}
+
 /* Typography */
 
 .lekton {
