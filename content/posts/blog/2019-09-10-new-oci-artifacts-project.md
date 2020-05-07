@@ -4,7 +4,7 @@ author:
   name: Steve Lasker
   tag: slasker
   twitter: stevelasker
-tags: news
+tags: blog
 date: 2019-09-10
 
 ---
