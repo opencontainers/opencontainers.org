@@ -57,12 +57,6 @@ url = "#"
 weight = 10
 
 [[menu.main]]
-name = "Members"
-parent = "about"
-url = "/about/members"
-weight = 20
-
-[[menu.main]]
 name = "Governance"
 parent = "about"
 url = "https://github.com/opencontainers/tob/blob/master/CHARTER.md"
@@ -75,22 +69,10 @@ url = "https://github.com/opencontainers/.github/blob/master/CODE_OF_CONDUCT.md"
 weight = 40
 
 [[menu.main]]
-name = "Technical oversight board"
+name = "Leadership and oversight"
 parent = "about"
 url = "/about/tob"
 weight = 50
-
-[[menu.main]]
-name = "Leadership"
-parent = "about"
-url = "/about/leadership"
-weight = 60
-
-[[menu.main]]
-name = "Leadership"
-parent = "about"
-url = "/about/leadership"
-weight = 60
 
 [[menu.main]]
 name = "Security disclosure"
@@ -139,12 +121,6 @@ name = "In the news"
 parent ="news"
 url = "/news/"
 weight = 20
-
-[[menu.main]]
-name = "Blog"
-parent ="news"
-url = "/blog/"
-weight = 30
 
 [[menu.main]]
 name = "FAQ"
