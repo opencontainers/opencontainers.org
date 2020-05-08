@@ -9,16 +9,22 @@ header {
   z-index: 9999;
 }
 
+.header-shadow {
+  box-shadow: 4px 4px 26px rgba(0, 0, 0, 0.29);
+}
+
+.bg-image {
+  background-image: url('/img/hero-bg.png');
+  background-repeat: repeat;
+  background-size: 400px;
+}
+
+
 /* Typography */
 
 .lekton {
   font-family: 'Lekton', sans-serif;
 }
-
-.header-shadow {
-  box-shadow: 4px 4px 26px rgba(0, 0, 0, 0.29);
-}
-
 /* Body content – type */
 
 .content {
@@ -119,12 +125,6 @@ input#nav-toggle:checked~#nav-menu {
 }
 
 /* partials/home/hero.html */
-
-.bg-image {
-  background-image: url('/img/hero-bg.png');
-  background-repeat: repeat;
-  background-size: 400px;
-}
 
 .hero-btn {
   @apply m-10 py-2 px-4 float-right bg-lightpurple shadow text-white text-xl lekton;
