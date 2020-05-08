@@ -1,7 +1,6 @@
 {{ $home   := .Site.BaseURL }}
 {{ $here   := .RelPermalink }}
 {{ $main   := .Site.Menus.main }}
-{{ $about   := .Site.Menus.about }}
 
 <ul id="nav-menu" class="items-center justify-end flex-grow hidden w-full mt-2 md:flex-row sm:flex-row sm:flex sm:w-auto sm:block list-reset sm:mt-0">
 {{ with $main }}
@@ -22,18 +21,6 @@
       {{ if .HasChildren }}
         <div class="p-2 child-menu">
               <ul>
-              {{ with $about }}
-                {{ range . }}
-                <li>
-                  {{ $isHere := eq .URL $here }}
-                  {{ $isExternal := hasPrefix .URL "http" }}
-                  <a class="inline-block text-gray-500 sm:px-2 hover:text-lightpurple lekton navbar-item{{ if $isHere }} is-active{{ end }}" href="{{ .URL }}"{{ if $isExternal }} target="_blank"{{ end }}>
-                    {{ .Name }}
-                  </a>
-                </li>
-                {{ end }}
-              {{ end }}
-              
                 {{ range .Children }}
                 <li>
                   <a class="inline-block text-gray-500 sm:px-2 hover:text-lightpurple lekton navbar-item{{ if $isHere }} is-active{{ end }}" href="{{ .URL }}"{{ if $isExternal }} target="_blank"{{ end }}>
