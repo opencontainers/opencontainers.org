@@ -25,6 +25,9 @@
                 <li>
                   <a class="inline-block text-gray-500 sm:px-2 hover:text-lightpurple lekton navbar-item{{ if $isHere }} is-active{{ end }}" href="{{ .URL }}"{{ if $isExternal }} target="_blank"{{ end }}>
                     {{ .Name }}
+                    {{ if eq .Post "external" }}
+                      <ion-icon name="trending-up-sharp" title="external link"></ion-icon>
+                    {{ end }}
                   </a>
                 </li>
                 {{ end }}
