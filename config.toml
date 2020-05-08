@@ -60,6 +60,7 @@ weight = 10
 name = "Governance"
 parent = "about"
 url = "https://github.com/opencontainers/tob/blob/master/CHARTER.md"
+post = "<ion-icon name=\"logo-github\"></ion-icon>"
 weight = 30
 
 [[menu.main]]
@@ -133,3 +134,9 @@ name = "Release notices"
 identifier ="releases"
 url = "/releases"
 weight = 80
+
+[[menu.main]]
+name = "Contact us"
+identifier ="contact"
+url = "/contact"
+weight = 90
