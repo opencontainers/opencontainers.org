@@ -70,7 +70,7 @@ footer a:hover {
 /* single.html  */
 
 .single-header {
-   @apply text-white bg-darkpurple lekton;
+   @apply text-white bg-darkpurple lekton bg-image;
 }
 
 /* partials/top-menu.html */
@@ -119,6 +119,12 @@ input#nav-toggle:checked~#nav-menu {
 }
 
 /* partials/home/hero.html */
+
+.bg-image {
+  background-image: url('/img/hero-bg.png');
+  background-repeat: repeat;
+  background-size: 400px;
+}
 
 .hero-btn {
   @apply m-10 py-2 px-4 float-right bg-lightpurple shadow text-white text-xl lekton;
