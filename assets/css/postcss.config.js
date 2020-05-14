@@ -18,26 +18,11 @@ module.exports = {
       ],
       // Include any special characters you're using in this regular expression
       defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [], 
-      fontFace: true
+      fontFace: false
     }),
     require('autoprefixer')({
       grid: true
     }),
-    require('postcss-reporter'),
-    require('postcss-font-magician')({
-        variants: {
-          'Open Sans': {
-            '400': [],
-            '400i': [],
-            '700': []
-          },
-          'Lekton': {
-            '400': [],
-            '400i': [],
-            '700': []
-          }
-        },
-        foundries: ['google']
-    }),
+    require('postcss-reporter')
   ]
 }

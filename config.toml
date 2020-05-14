@@ -60,13 +60,14 @@ weight = 10
 name = "Governance"
 parent = "about"
 url = "https://github.com/opencontainers/tob/blob/master/CHARTER.md"
-post = "<ion-icon name=\"logo-github\"></ion-icon>"
+post = "external"
 weight = 30
 
 [[menu.main]]
 name = "Code of conduct"
 parent = "about"
 url = "https://github.com/opencontainers/.github/blob/master/CODE_OF_CONDUCT.md"
+post = "external"
 weight = 40
 
 [[menu.main]]
