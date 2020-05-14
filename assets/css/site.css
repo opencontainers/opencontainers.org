@@ -162,3 +162,13 @@ input#nav-toggle:checked~#nav-menu {
 .trio:hover {
   @apply bg-lightgray;
 }
+
+/* partials/home/members.html */
+
+.member-logo img {
+  filter:grayscale(100%);
+}
+
+.member-logo:hover img {
+  filter:grayscale(0%);
+}
