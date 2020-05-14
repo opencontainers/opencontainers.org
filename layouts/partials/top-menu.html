@@ -5,13 +5,10 @@
 <ul id="nav-menu" class="items-center justify-end flex-grow hidden w-full mt-2 md:flex-row sm:flex-row sm:flex sm:w-auto sm:block list-reset sm:mt-0">
 {{ with $main }}
   {{ range . }}
-  
     {{ $isHere := eq .URL $here }}
-    {{ $isExternal := hasPrefix .URL "http" }}
-  
     <li class="parent-menu-item sm:self-start">
       
-      <a class="inline-block text-gray-500 sm:px-2 hover:text-lightpurple lekton navbar-item{{ if $isHere }} is-active{{ end }}" href="{{ .URL }}"{{ if $isExternal }} target="_blank"{{ end }}>
+      <a class="inline-block text-gray-500 sm:px-2 hover:text-lightpurple lekton navbar-item{{ if $isHere }} is-active{{ end }}" href="{{ .URL }}" {{ if eq .Post "external" }} target="_blank" {{ end }}>
         {{ .Name }}
         {{ if .HasChildren }}
           <ion-icon name="chevron-down-sharp" class="align-middle"></ion-icon>
@@ -23,7 +20,7 @@
               <ul>
                 {{ range .Children }}
                 <li>
-                  <a class="inline-block text-gray-500 sm:px-2 hover:text-lightpurple lekton navbar-item{{ if $isHere }} is-active{{ end }}" href="{{ .URL }}"{{ if $isExternal }} target="_blank"{{ end }}>
+                  <a class="inline-block text-gray-500 sm:px-2 hover:text-lightpurple lekton navbar-item{{ if $isHere }} is-active{{ end }}" href="{{ .URL }}" {{ if eq .Post "external" }} target="_blank" {{ end }}>
                     {{ .Name }}
                     {{ if eq .Post "external" }}
                       <ion-icon name="trending-up-sharp" title="external link"></ion-icon>

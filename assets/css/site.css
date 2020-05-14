@@ -23,7 +23,8 @@ header {
 /* Typography */
 
 .lekton {
-  font-family: 'Lekton', sans-serif;
+  font-family: "Lekton", sans-serif;
+  font-weight: normal;
 }
 /* Body content – type */
 

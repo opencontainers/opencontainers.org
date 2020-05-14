@@ -6,6 +6,6 @@ module.exports = {
       path: [themeDir]
     }),
     require('tailwindcss')(themeDir + 'assets/css/tailwind.config.js'),
-    require('autoprefixer'),
+    require('autoprefixer')
   ]
 }
