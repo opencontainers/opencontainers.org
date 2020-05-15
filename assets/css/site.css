@@ -29,11 +29,11 @@ header {
 /* Body content – type */
 
 .content {
-  @apply text-lg leading-relaxed;
+  @apply text-lg leading-normal;
 }
 
 .content p {
-  padding-bottom: 1.4em
+  padding-bottom: 1.4em;
 }
 
 .content a:link {

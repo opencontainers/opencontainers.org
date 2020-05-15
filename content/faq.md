@@ -1,5 +1,6 @@
 ---
 title: "FAQ"
+toc: true
 ---
 
 ## What is the mission of the OCI?
