@@ -29,11 +29,11 @@ header {
 /* Body content – type */
 
 .content {
-  @apply text-base leading-snug;
+  @apply text-lg leading-relaxed;
 }
 
 .content p {
-  padding-bottom: 1.4em;
+  padding-bottom: 1.4em
 }
 
 .content a:link {
@@ -49,15 +49,22 @@ header {
 }
 
 .content h2 {
-  @apply text-2xl font-bold pt-8 pb-2;
+  @apply text-2xl pt-8 pb-2;
 }
 
 .content h3 {
-  @apply text-xl font-bold pt-4 pb-1;
+  @apply text-xl pt-4 pb-1;
 }
 
 .content h4 {
-  @apply text-lg font-bold pt-4 pb-1;
+  @apply text-lg pt-4 pb-1;
+}
+
+.content ul {
+  list-style-type: square;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.8rem;
 }
 
 /* General - Footer */
