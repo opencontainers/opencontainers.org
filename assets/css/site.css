@@ -61,7 +61,11 @@ header {
 }
 
 .content h4 {
-  @apply text-lg pt-4 pb-1;
+  @apply text-lg pt-3 pb-1;
+}
+
+.content h5 {
+  @apply text-sm font-bold pt-1 pb-1;
 }
 
 .content ul {

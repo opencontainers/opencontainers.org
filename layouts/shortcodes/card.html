@@ -1,4 +1,40 @@
-<div class="shadow-lg flex flex-col inline-flex w-1/2">
-  <img class="rounded-full h-32 w-32 self-center" src="/img/tob/Phil-Estes.jpg">
-  <p>Hello!</p>
+{{ $img := .Get "img" }}
+{{ $name := .Get "name"}}
+{{ $company := .Get "company" }}
+{{ $title := .Get "title" }}
+{{ $github := .Get "github" }}
+{{ $linkedin := .Get "linkedin" }}
+{{ $twitter := .Get "twitter" }}
+{{ $personal := .Get "personal" }}
+
+<div class="shadow-md xs:col-span-9 lg:col-span-3 p-5 flex flex-col items-center">
+  {{ with $img }}
+    <img class="rounded-full h-32 w-32 border-solid border-darkpurple border-4" src="{{ $img }}">
+  {{ else }}
+    <ion-icon name="person-circle-sharp" class="rounded-full h-32 w-32 border-solid text-lightgray border-4"></ion-icon>
+  {{ end }}
+  <h4>{{ $name }}</h4>
+  {{ with $company }}
+    <h5>{{ $company }}</h5>
+  {{ end }}
+  {{ with $title }}
+    <h5>{{ $title }}</h5>
+  {{ end }}
+  <div class="social items-center pt-1">
+    {{ with $github }}
+      <a href="{{ $github }}" target="_blank" title="GitHub profile"><ion-icon name="logo-github"></ion-icon></a>
+    {{ end }}
+    {{ with $linkedin }}
+      <a href="{{ $linkedin }}" target="_blank" title="LinkedIn profile"><ion-icon name="logo-linkedin"></ion-icon></a>
+    {{ end }}
+    {{ with $twitter }}
+      <a href="{{ $twitter }}" target="_blank" title="Twitter profile"><ion-icon name="logo-twitter"></ion-icon></a>
+    {{ end }}
+    {{ with $personal }}
+      <a href="{{ $personal }}" target="_blank" title="personal website"><ion-icon name="globe-sharp"></ion-icon></a>
+    {{ end }}
+  </div>
+  <div class="description text-sm pt-1">
+      {{ .Inner | markdownify }}
+  </div>
 </div> 
