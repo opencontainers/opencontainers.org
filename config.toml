@@ -138,8 +138,8 @@ weight = 60
 
 [[menu.main]]
 name = "Release notices"
-identifier ="releases"
-url = "/releases"
+identifier ="release-notices"
+url = "/release-notices"
 weight = 80
 
 [[menu.main]]
