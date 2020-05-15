@@ -1,19 +1,23 @@
 {{ define "main" }}
+{{ $isfullwidth := .Params.fullwidth }}
+{{ $hastoc := .Params.toc }}
+
 <article class="mt-20 mb-10">
   <div class="px-10 pt-10 pb-5 single-header">
     {{ partial "single-title.html" . }}
   </div>
   <div class="grid grid-cols-3 gap-4 py-12 px-20 bg-white content">
-    <div class="content xs:col-span-3 lg:col-span-2">
+    <div class="content xs:col-span-3 lg:col-span-2 {{ if ($isfullwidth) }}lg:col-span-3{{ end }}">
       {{ partial "content.html" . }}
     </div>
+    {{ if ne ($isfullwidth) }}
     <div class="content xs:col-span-3 lg:col-span-1 text-sm">
-      {{ $hastoc := .Params.toc }}
       {{ if ($hastoc) }}
         On this page:
         {{ .TableOfContents }}
       {{ end }}
       </div>
+    {{ end }}
   </div>
 </article>
 {{ end }}
