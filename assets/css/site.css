@@ -40,6 +40,10 @@ header {
   @apply text-lightpurple;
 }
 
+.content a:visited {
+  @apply text-mediumpurple;
+}
+
 .content a:hover {
   @apply text-darkpurple;
 }

@@ -85,14 +85,20 @@ weight = 70
 [[menu.main]]
 name = "Community"
 identifier ="community"
-url = "/community"
+url = "#"
 weight = 20
+
+[[menu.main]]
+name = "Overview"
+parent ="community"
+url = "/community/overview"
+weight = 10
 
 [[menu.main]]
 name = "Certification program"
 parent = "community"
 url = "/community/certified"
-weight = 10
+weight = 20
 
 [[menu.main]]
 name = "Join"
