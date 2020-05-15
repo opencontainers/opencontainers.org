@@ -57,6 +57,12 @@ url = "#"
 weight = 10
 
 [[menu.main]]
+name = "About the OCI"
+parent = "about"
+url = "/about/overview"
+weight = 20
+
+[[menu.main]]
 name = "Governance"
 parent = "about"
 url = "https://github.com/opencontainers/tob/blob/master/CHARTER.md"
