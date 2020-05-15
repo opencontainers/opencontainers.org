@@ -33,7 +33,8 @@ header {
 }
 
 .content p {
-  padding-bottom: 1.4em;
+  padding-top: 0.8rem;
+  paddin-bottom: 0.4rem;
 }
 
 .content a:link {
@@ -70,6 +71,13 @@ header {
 
 .content ul {
   list-style-type: square;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.8rem;
+}
+
+.content ol {
+  list-style-type: decimal;
   padding-left: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.8rem;
