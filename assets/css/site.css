@@ -67,6 +67,28 @@ header {
   padding-bottom: 0.8rem;
 }
 
+.content table {
+  @apply w-full mt-1 mb-6;
+}
+
+.content table th {
+  text-align: left;
+  @apply bg-lightgray py-2 pl-2;
+}
+
+.content table tr {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.content table td {
+  @apply py-2 pl-2;
+}
+
+.content blockquote {
+  @apply p-4 mt-1 mb-6; 
+  border-left: 0.5rem solid #5371DD;
+}
+
 /* General - Footer */
 
 footer {

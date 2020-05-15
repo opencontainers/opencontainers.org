@@ -26,4 +26,6 @@ Of course, as an open source project, we welcome anyone to get involved in the d
 
 If your company or organization would like to receive more information about membership, please reach out by connecting through the form below.
 
+## Inquiries
+
 //TODO: EMAIL FORM
