@@ -28,4 +28,12 @@ If your company or organization would like to receive more information about mem
 
 ## Inquiries
 
-//TODO: EMAIL FORM
+To apply for membership, email [info@opencontainers.org](mailto:info@opencontainers.org). Please include the following:
+
+- First name 
+- Last name 
+- Email
+- Phone number 
+- Company 
+- Job title 
+- Country 
