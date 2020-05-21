@@ -7,9 +7,9 @@ tags: blog
 date: 2016-10-05
 ---
 
-With [ContainerCon Europe](https://events.linuxfoundation.org/events/containercon-europe) currently underway in Berlin, we want to share some of the great progress the Open Container Initiative (OCI) has made.
+With ContainerCon Europe currently underway in Berlin, we want to share some of the great progress the Open Container Initiative (OCI) has made.
 
-The OCI was [launched](/news/2015-07-22-community-rallies-behind-open-container-initiative) with the express purpose of developing standards for the container format and runtime that will give everyone the ability to fully commit to container technologies today without worrying that their current choice of infrastructure, cloud provider or tooling will lock them in.
+The OCI was [launched](/posts/announcements/2015-07-22-community-rallies-behind-open-container-initiative) with the express purpose of developing standards for the container format and runtime that will give everyone the ability to fully commit to container technologies today without worrying that their current choice of infrastructure, cloud provider or tooling will lock them in.
 
 Last month, the OCI formed two new [tools projects](https://github.com/opencontainers/tob/blob/master/proposals/tools.md): runtime tools and image tools. These projects are associated with the OCI runtime spec and image format spec and serve as repositories for testing tools:
 

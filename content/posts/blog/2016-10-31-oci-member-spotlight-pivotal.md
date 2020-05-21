@@ -23,7 +23,7 @@ Our first important milestone was to adopt OCI runC as Cloud Foundry’s core co
 The stability of a published and versioned container image specification is very important. Users can be confident that whatever version of the specification they use to produce the image can be inspected and will know whether the target deployment platform will run and support that image. When new innovations and features are introduced, users can know which ones are supported where. This removes uncertainty and increases the likelihood of interoperability.
 
 **How do you plan to use the runtime spec and/or image format spec?**  
-Now that we have runC as the core container runtime in Cloud Foundry, we intend to participate in the image specification work. If you look at the [OCI Scope Table](/about/oci-scope-table) there are many emerging areas where new work may develop in all aspects of the container lifecycle and there is lots of room for contributors to get involved.
+Now that we have runC as the core container runtime in Cloud Foundry, we intend to participate in the image specification work. If you look at the OCI Scope Table there are many emerging areas where new work may develop in all aspects of the container lifecycle and there is lots of room for contributors to get involved.
 
 **How will these specifications help your business?**  
 Interoperability and portability is an immediate, obvious benefit for so many participants in the ecosystem. Developers and partners can have confidence that no matter what tools they use to produce standard images, they will have a very far reach for platforms where their software will run unchanged. This helps Pivotal’s Cloud Foundry customers and partners support more workloads on a common platform that works the same on-premises or in public clouds.
@@ -35,4 +35,4 @@ I believe we are going to continue to see more interoperability and workload por
 For all participants of the container ecosystem, the benefits are about being part of a large and growing ecosystem and community. The open governance ensures that anyone can participate and have transparency for the decisions, roadmap and ongoing work.
 
 **What advice would you give to someone considering joining OCI?**  
-Check out the [OCI Scope Table](/about/oci-scope-table), decide what projects are most meaningful to your organization, and start [participating](/community).
+Check out the OCI Scope Table, decide what projects are most meaningful to your organization, and start [participating](/community).

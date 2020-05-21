@@ -20,7 +20,7 @@ While v1.0 represents a great deal of progress, marking a readiness for serious 
 
 More information about the Runtime Specification v1.0 is available at https://github.com/opencontainers/runtime-spec/ and details on the Image Format v1.0 Specification can be found here: https://github.com/opencontainers/image-spec
 
-To learn about becoming involved with the OCI, [visit here](/community) for details on the developer community, [here](/join) to join as a member or participate in the [upcoming certification program](/certification).
+To learn about becoming involved with the OCI, [visit here](/community) for details on the developer community, [here](/join) to join as a member or participate in the [upcoming certification program](/community/certified).
 
 **Thanks to the OCI Community**  
 The release would not be possible without the hard work and dedication of the numerous maintainers of the runtime and image format specs: Vincent Batts, Jonathan Boulle, Jason Bouzane, Brendan Burns, Michael Crosby, Daniel Dao Quang Minh, Stephen Day, Tianon Gravi, Qiang Huang, Rohit Jnagal, Vishu Kannan, Mrunal Patel, Brandon Philips, and John Starks. We are also extremely grateful to the additional maintainers across the OCI: Chris Aniszczyk, Liang Chenye, Rob Dolin, Zhou Hao, Lei Jitang, Xie Keyang, Victor Marmol, Aleksa Sarai, Ma Shimiao, Andrey Vagin, and Stephen Walli. We would also like to thank our 250+ contributors across the wider OCI community.
@@ -99,7 +99,7 @@ The Linux Foundation is the organization of choice for the world’s top develop
 - [Join as a Member](/join)
 - [Join the OCI Developer Community](/community)
 - [OCI Blog](/blog)
-- [FAQ](faq)
+- [FAQ](/faq)
 
 **Media Inquiries**  
 Jill Lovato  

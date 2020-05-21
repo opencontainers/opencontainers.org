@@ -11,7 +11,7 @@ The OCI community is comprised of a diverse set of member companies that are com
 
 **Name:** Guohui Liu  
 **Title:** Co-founder and CTO  
-**Company:** [EasyStack](https://www.easystack.cn/en/)  
+**Company:** [EasyStack](https://easystack.io/)  
 
 **Why did you join OCI?**  
 Trends in cloud native computing are still on the rise. Businesses are evolving faster than ever before as applications require more agile and scalable infrastructure, and container technology is right at the center of it all. Unified standards are imperative for container technology to evolve and develop, with input and participation from the entire ecosystem. We believe the Open Container Initiative (OCI), with its runtime and image format specifications, plays a leading role in actualizing the ability to “package once, run anywhere” for applications.
