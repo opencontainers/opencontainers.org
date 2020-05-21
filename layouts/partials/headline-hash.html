@@ -1,2 +1,0 @@
-{{ . | replaceRE "(<h[2-9] id=\"([^\"]+)\".+)(</h[2-9]+>)" `${1} <a class="headline-hash" href="#${2}">
-<span class="icon hashlink"><ion-icon name="link-sharp" class="align-middle"></ion-icon></a>${3}` | safeHTML }}

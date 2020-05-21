@@ -8,7 +8,7 @@
   </div>
   <div class="grid grid-cols-3 gap-4 py-12 px-20 bg-white content">
     <div class="content xs:col-span-3 lg:col-span-2 {{ if ($isfullwidth) }}lg:col-span-3{{ end }}">
-      {{ partial "content.html" . }}
+      {{ .Content }}
     </div>
     {{ if ne ($isfullwidth) }}
     <div class="content xs:col-span-3 lg:col-span-1 text-sm">
