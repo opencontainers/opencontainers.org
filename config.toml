@@ -57,6 +57,12 @@ url = "#"
 weight = 10
 
 [[menu.main]]
+name = "About the OCI"
+parent = "about"
+url = "/about/overview"
+weight = 20
+
+[[menu.main]]
 name = "Governance"
 parent = "about"
 url = "https://github.com/opencontainers/tob/blob/master/CHARTER.md"
@@ -85,14 +91,20 @@ weight = 70
 [[menu.main]]
 name = "Community"
 identifier ="community"
-url = "/community"
+url = "#"
 weight = 20
+
+[[menu.main]]
+name = "Overview"
+parent ="community"
+url = "/community/overview"
+weight = 10
 
 [[menu.main]]
 name = "Certification program"
 parent = "community"
 url = "/community/certified"
-weight = 10
+weight = 20
 
 [[menu.main]]
 name = "Join"
@@ -132,8 +144,8 @@ weight = 60
 
 [[menu.main]]
 name = "Release notices"
-identifier ="releases"
-url = "/releases"
+identifier ="release-notices"
+url = "/release-notices"
 weight = 80
 
 [[menu.main]]

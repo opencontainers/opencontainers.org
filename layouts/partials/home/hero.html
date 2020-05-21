@@ -4,9 +4,9 @@
       <h1 class="xs:text-3xl sm:text-5xl text-white lekton">{{ site.Title }}</h1>
       <p class="xs:text-base sm:text-2xl text-white lekton description">{{ $.Site.Params.description | markdownify }}</p>
       <p class="text-white herodescription">{{ $.Site.Params.herodescription | markdownify }}</p>
-      <button class="hero-btn xs:mr-0">
+      <a href="/about/overview/" class="hero-btn xs:mr-0">
         Learn more <ion-icon name="return-down-forward-sharp" class="align-middle"></ion-icon>
-      </button>
+      </a>
     </div>
     <div class="xs:hidden lg:block hero-img pt-12">
       <img src="img/hero.svg"/>

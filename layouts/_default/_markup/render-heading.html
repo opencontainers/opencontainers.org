@@ -1,0 +1,8 @@
+<h{{ .Level }} id="{{ .Anchor | safeURL }}">
+  {{ .Text | safeHTML }}
+  <a class="headline-hash" href="#{{ .Anchor | safeURL }}">
+    <span class="icon hashlink">
+      <ion-icon name="link-sharp" class="align-middle"></ion-icon>
+    </span>
+  </a>
+</h{{ .Level }}>

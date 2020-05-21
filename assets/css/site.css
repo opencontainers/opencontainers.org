@@ -29,15 +29,20 @@ header {
 /* Body content – type */
 
 .content {
-  @apply text-base leading-snug;
+  @apply text-lg leading-normal;
 }
 
 .content p {
-  padding-bottom: 1.4em;
+  padding-top: 0.8rem;
+  paddin-bottom: 0.4rem;
 }
 
 .content a:link {
   @apply text-lightpurple;
+}
+
+.content a:visited {
+  @apply text-mediumpurple;
 }
 
 .content a:hover {
@@ -49,15 +54,55 @@ header {
 }
 
 .content h2 {
-  @apply text-2xl font-bold pt-8 pb-2;
+  @apply text-2xl pt-8 pb-2;
 }
 
 .content h3 {
-  @apply text-xl font-bold pt-4 pb-1;
+  @apply text-xl pt-4 pb-1;
 }
 
 .content h4 {
-  @apply text-lg font-bold pt-4 pb-1;
+  @apply text-lg pt-3 pb-1;
+}
+
+.content h5 {
+  @apply text-sm font-bold pt-1 pb-1;
+}
+
+.content ul {
+  list-style-type: square;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.8rem;
+}
+
+.content ol {
+  list-style-type: decimal;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.8rem;
+}
+
+.content table {
+  @apply w-full mt-1 mb-6;
+}
+
+.content table th {
+  text-align: left;
+  @apply bg-lightgray py-2 pl-2;
+}
+
+.content table tr {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.content table td {
+  @apply py-2 pl-2;
+}
+
+.content blockquote {
+  @apply p-4 mt-1 mb-6; 
+  border-left: 0.5rem solid #5371DD;
 }
 
 /* General - Footer */
