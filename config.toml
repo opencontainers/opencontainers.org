@@ -115,7 +115,7 @@ weight = 30
 [[menu.main]]
 name = "Blog"
 identifier ="blog"
-url = "/blog"
+url = "/posts/blog"
 weight = 40
 
 [[menu.main]]
@@ -127,13 +127,13 @@ weight = 50
 [[menu.main]]
 name = "Announcements"
 parent ="news"
-url = "/announcements/"
+url = "/posts/announcements/"
 weight = 10
 
 [[menu.main]]
 name = "In the news"
 parent ="news"
-url = "/news/"
+url = "/posts/news/"
 weight = 20
 
 [[menu.main]]
