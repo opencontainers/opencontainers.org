@@ -1,6 +1,6 @@
 title = "Open Container Initiative"
 baseURL = "https://opencontainers.org"
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy", "taxonomyTerm", "section"]
 copyright = "Cloud Native Computing Foundation"
 
 enableGitInfo = true
