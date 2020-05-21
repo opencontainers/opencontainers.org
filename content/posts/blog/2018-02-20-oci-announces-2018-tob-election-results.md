@@ -30,8 +30,8 @@ The TOB also voted to elect Michael Crosby (Docker) as the new Chair. This new T
 
 I’d also like to extend a big thank you to all of our outgoing TOB members – Chris Wright, Diogo Mónica, Jason Bouzane, John Gossman and former Chair, Brandon Philips – for their service and commitment. We look forward to your continued collaboration with and participation in OCI!
 
-Next month, new TOB member Phil Estes of IBM will represent OCI on a panel at Container World on 2/28. Visit http://bit.ly/2Bsr5Gl to learn more about his involvement in this session!
+Next month, new TOB member Phil Estes of IBM will represent OCI on a panel at Container World on 2/28. Visit to learn more about his involvement in this session!
 
-As always, we welcome any/all contributions from the container community – as our success banks on the support and collaboration of many. If you’re interested in contributing to OCI, please join the [OCI developer community](/community). For those who are building products on OCI technology, we recommend [joining as a member](/join) and participating in the [future certification program](/certification).
+As always, we welcome any/all contributions from the container community – as our success banks on the support and collaboration of many. If you’re interested in contributing to OCI, please join the [OCI developer community](/community). For those who are building products on OCI technology, we recommend [joining as a member](/join) and participating in the [future certification program](/community/certified).
 
 Between our exciting new TOB, upcoming releases and a number of exciting community programs we have in the works, we’re on track to make 2018 our biggest year yet 👍🏼

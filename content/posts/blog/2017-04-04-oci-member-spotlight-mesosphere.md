@@ -22,7 +22,7 @@ Mesosphere participates in the [image spec](https://github.com/opencontainers/im
 Transportation and discovery mechanisms are still missing from the OCI image spec, so we are inventing our own open source image discovery and transportation mechanism in the meantime. We are excited for image discovery and transportation to be standardized, so that we don’t have to invent our own way, which will give users a more consistent experience.
 
 **How do you plan to use the OCI specs?**  
-The image format spec will be supported in Mesos and DC/OS soon. We don’t directly expose runtime spec configurations to our users; it is abstracted away from the Mesos and DC/OS APIs via an external [containerizer](http://mesos.apache.org/documentation/latest/containerizer/). (Kubernetes does something similar with the [Container Runtime Interface](https://github.com/cri-o/cri-o) (CRI).
+The image format spec will be supported in Mesos and DC/OS soon. We don’t directly expose runtime spec configurations to our users; it is abstracted away from the Mesos and DC/OS APIs via an external [containerizer](http://mesos.apache.org/documentation/latest/mesos-containerizer/). (Kubernetes does something similar with the [Container Runtime Interface](https://github.com/cri-o/cri-o) (CRI).
 
 **How will these specifications help your business?**  
 Mesos, Marathon, and DC/OS help users build data-dependent apps on any infrastructure, and Mesosphere ultimately wants to give all its users more choices about how to build their applications. Letting users choose the type of containers they use is one big draw of the projects we contribute to (we already support Docker and Mesos containers), and we’re excited to be able to give our users a consistent experience, and more open source options.

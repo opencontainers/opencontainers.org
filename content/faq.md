@@ -63,7 +63,7 @@ You will note that a lot of these are directly adopted from the appc founding va
 
 ## What has Docker done to help create this foundation?
 
-Docker has donated both a draft specification for the base format and runtime and the code associated with a reference implementation of that specification, to the OCI. Docker has taken the entire contents of the libcontainer project (https://github.com/docker/libcontainer), including nsinit, and all modifications needed to make it run independently of Docker, and donated it to this effort. This codebase, called runc, can be found at https://github.com/opencontainers/runc
+Docker has donated both a draft specification for the base format and runtime and the code associated with a reference implementation of that specification, to the OCI. Docker has taken the entire contents of the [libcontainer project](https://github.com/docker/libcontainer), including nsinit, and all modifications needed to make it run independently of Docker, and donated it to this effort. This codebase, called runc, can be found at https://github.com/opencontainers/runc
 
 ## How has Docker’s role evolved since the OCI was formed? How does OCI fit into containerd?
 

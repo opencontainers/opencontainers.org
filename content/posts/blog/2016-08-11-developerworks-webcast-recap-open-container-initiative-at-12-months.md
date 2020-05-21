@@ -21,4 +21,4 @@ Technical leaders of OCI discussed topics including:
 
 The webcast also included a brief demo of OCI tooling (including [runc](https://github.com/opencontainers/runc)), followed by an open Q&A with attendees.
 
-A video of the webcast along with the slides presented and a full transcript are available at https://developer.ibm.com/open/videos/open-container-initiative-at-12-months/ for those who were unable to make it!
+A video of the webcast along with the slides presented and a full transcript are available online for those who were unable to make it!
