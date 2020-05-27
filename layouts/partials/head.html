@@ -21,10 +21,10 @@
 
 {{ if site.IsServer }}
   {{ $style := $styles | postCSS (dict "config" "./assets/css/dev/postcss.config.js") }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
 {{ else }}
   {{ $style := $styles | postCSS (dict "config" "./assets/css/postcss.config.js") | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+  <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
 {{ end }}
 
 {{ hugo.Generator }}
