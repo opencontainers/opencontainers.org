@@ -1,20 +1,19 @@
-{{ $home   := .Site.BaseURL }}
+{{ $home   := site.BaseURL }}
 {{ $here   := .RelPermalink }}
-{{ $main   := .Site.Menus.main }}
+{{ $main   := site.Menus.main }}
 
 <ul id="nav-menu" class="items-center justify-end flex-grow hidden w-full mt-2 md:flex-row sm:flex-row sm:flex sm:w-auto sm:block list-reset sm:mt-0">
 {{ with $main }}
   {{ range . }}
     {{ $isHere := eq .URL $here }}
     <li class="parent-menu-item sm:self-start">
-      
       <a class="inline-block text-gray-500 sm:px-2 hover:text-lightpurple lekton navbar-item{{ if $isHere }} is-active{{ end }}" href="{{ .URL }}" {{ if eq .Post "external" }} target="_blank" {{ end }}>
         {{ .Name }}
         {{ if .HasChildren }}
           <ion-icon name="chevron-down-sharp" class="align-middle"></ion-icon>
         {{ end }}
       </a>
-      
+
       {{ if .HasChildren }}
         <div class="p-2 child-menu">
               <ul>
@@ -28,7 +27,7 @@
                   </a>
                 </li>
                 {{ end }}
-              </ul>              
+              </ul>
         </div>
       {{ end }}
     </li>
