@@ -34,7 +34,7 @@ header {
 
 .content p {
   padding-top: 0.8rem;
-  paddin-bottom: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .content a:link {
@@ -50,23 +50,23 @@ header {
 }
 
 .content h1 {
-  @apply text-3xl pt-8 pb-2;
+  @apply pt-8 pb-2 text-3xl;
 }
 
 .content h2 {
-  @apply text-2xl pt-8 pb-2;
+  @apply pt-8 pb-2 text-2xl;
 }
 
 .content h3 {
-  @apply text-xl pt-4 pb-1;
+  @apply pt-4 pb-1 text-xl;
 }
 
 .content h4 {
-  @apply text-lg pt-3 pb-1;
+  @apply pt-3 pb-1 text-lg;
 }
 
 .content h5 {
-  @apply text-sm font-bold pt-1 pb-1;
+  @apply pt-1 pb-1 text-sm font-bold;
 }
 
 .content ul {
@@ -89,7 +89,7 @@ header {
 
 .content table th {
   text-align: left;
-  @apply bg-lightgray py-2 pl-2;
+  @apply py-2 pl-2 bg-lightgray;
 }
 
 .content table tr {
@@ -101,7 +101,7 @@ header {
 }
 
 .content blockquote {
-  @apply p-4 mt-1 mb-6; 
+  @apply p-4 mt-1 mb-6;
   border-left: 0.5rem solid #5371DD;
 }
 
@@ -139,13 +139,13 @@ footer a:hover {
   .navbar-item {
     width: 100%;
   }
-  
+
   .parent-menu-item {
     height: 49px;
     display: flex;
     align-items: center;
   }
-   
+
   .parent-menu-item:hover > .child-menu {
     display: block;
   }
@@ -173,7 +173,7 @@ input#nav-toggle:checked~#nav-menu {
 /* partials/home/hero.html */
 
 .hero-btn {
-  @apply m-10 py-2 px-4 float-right bg-lightpurple shadow text-white text-xl lekton;
+  @apply float-right px-4 py-2 m-10 text-xl text-white shadow bg-lightpurple lekton;
 }
 
 .hero-btn:hover {
@@ -194,14 +194,14 @@ input#nav-toggle:checked~#nav-menu {
 
 @screen lg {
   .hero-img {
-    @apply block col-span-5; 
+    @apply block col-span-5;
   }
 }
 
 /* partials/home/trio.html */
 
 .trio {
-  @apply block flex flex-col m-10 p-10 shadow-md bg-white text-black;
+  @apply flex flex-col block p-10 m-10 text-black bg-white shadow-md;
 }
 
 .trio:hover {
@@ -211,10 +211,10 @@ input#nav-toggle:checked~#nav-menu {
 /* partials/home/members.html */
 
 .member-logo img {
-  filter:grayscale(100%);
+  filter: grayscale(100%);
   max-height: 100px;
 }
 
 .member-logo:hover img {
-  filter:grayscale(0%);
+  filter: grayscale(0%);
 }
