@@ -1,12 +1,13 @@
 {{ $title := .Title }}
 {{ $url := printf "%s" .Permalink | absLangURL }}
 {{ $body := print $title ", by " site.Title "\n" .Params.description "\n\n" $url "\n" }}
+{{ $twtr := index (where site.Params.social ".name" "twitter") 0 }}
 <div id="sharing">
   <a href="http://www.facebook.com/sharer.php?u={{ $url }}" class="pl-1" aria-label="share on Facebook">
     <ion-icon name="logo-facebook"></ion-icon>
   </a>
 
-  <a href="http://twitter.com/share?url={{ $url }}&text={{ $title }}&via={{with site.Params.social.twitter }}{{ . }}{{ end }}" class="pl-1" aria-label="share on Twitter">
+  <a href="http://twitter.com/share?url={{ $url }}&text={{ $title }}&via={{ $twtr.url }}" class="pl-1" aria-label="share on Twitter">
   <ion-icon name="logo-twitter"></ion-icon>
   </a>
 
