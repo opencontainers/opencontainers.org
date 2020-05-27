@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  z-index: 9999;
+  z-index: 999;
 }
 
 .header-shadow {
