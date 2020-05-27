@@ -7,7 +7,7 @@
 {{ $twitter := .Get "twitter" }}
 {{ $personal := .Get "personal" }}
 
-<div class="shadow-md xs:col-span-9 lg:col-span-3 p-5 flex flex-col items-center">
+<div class="shadow-md xs:col-span-9 lg:col-span-3 p-5 m-2 flex flex-col items-center">
   {{ with $img }}
     <img class="rounded-full h-32 w-32 border-solid border-darkpurple border-4" src="{{ $img }}">
   {{ else }}
