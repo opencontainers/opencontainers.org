@@ -1,8 +1,8 @@
-<div class="container grid grid-cols-12 flex self-center bg-white p-6 mb-10">
-<h1 class="text-4xl col-span-12 mb-6 lekton">Latest News</h1>
-{{ $postsSection := where .Site.RegularPages "Section" "posts" }} <!-- "getting-started" and "deployment" -->
+<div class="container flex grid self-center grid-cols-12 p-6 mb-10 bg-white">
+<h1 class="col-span-12 mb-6 text-4xl lekton">Latest News</h1>
+{{ $postsSection := where site.RegularPages "Section" "posts" }} <!-- "getting-started" and "deployment" -->
 {{ range $postsSection | first 3 }}
-    <article class="xs:col-span-12 lg:col-span-4 mx-4 mb-4 sm:mx-12">
+    <article class="mx-4 mb-4 xs:col-span-12 lg:col-span-4 sm:mx-12">
       {{ partial "feed-item.html" . }}
     </article>
 {{ end }}
