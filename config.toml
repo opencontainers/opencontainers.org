@@ -77,7 +77,7 @@ post = "external"
 weight = 40
 
 [[menu.main]]
-name = "Leadership and oversight"
+name = "Leadership"
 parent = "about"
 url = "/about/tob"
 weight = 50
