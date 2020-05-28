@@ -1,5 +1,5 @@
 ---
-title: "Leadership and oversight"
+title: "Leadership"
 fullwidth: true
 ---
 
