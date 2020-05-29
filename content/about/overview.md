@@ -15,4 +15,4 @@ To support this UX the OCI Image Format contains sufficient information to launc
 
 Docker is donating its container format and runtime, runC, to the OCI to serve as the cornerstone of this new effort. It is available now at https://github.com/opencontainers/runc.
 
-The Open Container Initiative is an open governance structure for the express purpose of creating open industry standards around container formats and runtime. Projects associated with the Open Container Initiative can be found at https://github.com/opencontainers and we recommend you get involved with the community athttps://www.opencontainers.org/community.
+The Open Container Initiative is an open governance structure for the express purpose of creating open industry standards around container formats and runtime. Projects associated with the Open Container Initiative can be found at https://github.com/opencontainers and we recommend you get involved with the community at https://www.opencontainers.org/community.
