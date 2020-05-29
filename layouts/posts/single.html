@@ -6,7 +6,13 @@
     {{ partial "social-share.html" . }}
   </div>
   <div class="px-32 py-24 bg-white content">
+    {{ with $.Param "subhead" }}
+      <h3>{{ $.Param "subhead" }}</h3>
+    {{ end }}
     {{ .Content }}
+    {{ with $.Param "readmore" }}
+      <a href="{{ $.Param "readmore" }}" target="_blank">Read More</a>
+    {{ end }}
   </div>
 </article>
 {{ end }}
