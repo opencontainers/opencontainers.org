@@ -2,6 +2,7 @@
 {{ $name := .Get "name"}}
 {{ $company := .Get "company" }}
 {{ $title := .Get "title" }}
+{{ $termdates := .Get "termdates" }}
 {{ $github := .Get "github" }}
 {{ $linkedin := .Get "linkedin" }}
 {{ $twitter := .Get "twitter" }}
@@ -20,6 +21,9 @@
   {{ with $title }}
     <h5>{{ $title }}</h5>
   {{ end }}
+  {{ with $termdates }}
+    <h6>Term: {{ $termdates }}</h6>
+  {{ end }}
   <div class="social items-center pt-1">
     {{ with $github }}
       <a href="{{ $github }}" class="p-1" target="_blank" title="GitHub profile"><ion-icon name="logo-github"></ion-icon></a>
@@ -37,4 +41,4 @@
   <div class="description text-sm pt-1">
       {{ .Inner | markdownify }}
   </div>
-</div> 
+</div>

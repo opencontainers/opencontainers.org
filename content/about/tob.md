@@ -28,15 +28,18 @@ development to the organization.
 
 ## Technical Oversight Board
 
-The Technical Oversight Board (TOB) is responsible for managing conflicts, violations of procedures or guidelines and any cross-project or high-level issues that cannot be resolved in the TDC for OCI Projects. The TOB shall also be responsible for adding, removing or reorganizing OCI Projects.
+The Technical Oversight Board (TOB) is responsible for managing conflicts, violations of procedures or guidelines and any cross-project or high-level issues that cannot be resolved in the TDC for OCI Projects.
+The TOB shall also be responsible for adding, removing or reorganizing OCI Projects.
 
-You can follow the TOB activity on GitHub (https://github.com/opencontainers/tob) and on their respective mailing list: https://groups.google.com/a/opencontainers.org/forum/#!forum/tob
+TOB members are directly elected by the maintainers of the OCI projects for two-year terms (staggered such that half of seats are up for election each year).
+The TOB Chair is elected each year by the TOB and is responsible for organising TOB meetings and setting the agendas of said meetings.
+
+You can follow the TOB's activities on [GitHub](https://github.com/opencontainers/tob) and on [their respective mailing list](https://groups.google.com/a/opencontainers.org/forum/#!forum/tob).
+The TOB holds infrequent meetings which are usually recorded and posted on [the primary OCI development mailing list](https://groups.google.com/a/opencontainers.org/forum/#!forum/dev).
 
 {{< card-container >}}
 
-{{< card img="/img/tob/Vincent-Batts.jpeg" name="Vincent Batts" company="Kinvolk" github="https://github.com/vbatts" linkedin="https://www.linkedin.com/in/vincentbatts/" twitter="https://twitter.com/vbatts" >}}
-(Term: 2019-01-29 → 2021-01-29)
-
+{{< card img="/img/tob/Vincent-Batts.jpeg" name="Vincent Batts" termdates="2019-01-29 → 2021-01-29" company="Kinvolk" github="https://github.com/vbatts" linkedin="https://www.linkedin.com/in/vincentbatts/" twitter="https://twitter.com/vbatts" >}}
 A mindful polyglot, Vincent Batts has spent the last 15 years participating in
 the Linux and open source community.
 
@@ -47,13 +50,10 @@ as the Go compiler for Fedora and Red Hat.
 
 {{< /card >}}
 
-{{< card img="/img/tob/Michael-Crosby.jpeg" name="Michael Crosby" company="Apple" github="https://github.com/crosbymichael" twitter="https://twitter.com/crosbymichael" >}}
-(Term: 2019-01-29 → 2021-01-29)
+{{< card img="/img/tob/Michael-Crosby.jpeg" name="Michael Crosby" termdates="2019-01-29 → 2021-01-29" company="Apple" github="https://github.com/crosbymichael" twitter="https://twitter.com/crosbymichael" >}}
 {{< /card >}}
 
-{{< card img="/img/tob/Phil-Estes.jpg" name="Phil Estes" title="TOB Chair" company="IBM">}}
-(Term: 2020-01-29 → 2022-01-29)
-
+{{< card img="/img/tob/Phil-Estes.jpg" name="Phil Estes" termdates="2020-01-29 → 2022-01-29" title="TOB Chair" company="IBM" github="https://github.com/estesp" twitter="https://twitter.com/estesp" >}}
 Phil is an open source leader and cloud native expert within IBM Cloud's Office
 of the CTO.
 
@@ -64,21 +64,15 @@ Steering Committee (TSC) and has been actively involved in Linux and open
 source for 15 years.
 {{< /card >}}
 
-{{< card img="/img/tob/Wei-Fu.jpeg" name="Wei Fu" company="Alibaba" github="https://github.com/fuweid">}}
-(Term: 2020-01-29 → 2022-01-29)
-
+{{< card img="/img/tob/Wei-Fu.jpeg" name="Wei Fu" termdates="2020-01-29 → 2022-01-29" company="Alibaba" github="https://github.com/fuweid">}}
 Maintainer of the CNCF's containerd project.
 {{< /card >}}
 
-{{< card name="Jon Johnson" company="Google" >}}
-(Term: 2020-01-29 → 2022-01-29)
-
+{{< card name="Jon Johnson" termdates="2020-01-29 → 2022-01-29" company="Google" >}}
 Software engineer at Google working on containers.
 {{< /card >}}
 
-{{< card img="/img/tob/Samuel-Karp.jpeg" name="Samuel Karp" company="Amazon Web Services" github="https://github.com/samuelkarp" twitter="https://twitter.com/samuelkarp" personal="https://samuelkarp.com" >}}
-(Term: 2020-01-29 → 2022-01-29)
-
+{{< card img="/img/tob/Samuel-Karp.jpeg" name="Samuel Karp" termdates="2020-01-29 → 2022-01-29" company="Amazon Web Services" github="https://github.com/samuelkarp" twitter="https://twitter.com/samuelkarp" personal="https://samuelkarp.com" >}}
 Samuel Karp is a Senior Software Development Engineer working on containers at
 Amazon Web Services. Sam first contributed to Docker in 2015 and containerd in
 2017. Sam's current focus is on container runtimes and how the runtimes
@@ -86,17 +80,13 @@ interact with orchestrators and registries. Sam has written code and designs
 for Amazon ECS and AWS Fargate and consulted for Amazon ECR and Amazon EKS.
 {{< /card >}}
 
-{{< card img="/img/tob/Steve-Lasker.jpeg" name="Steve Lasker" company="Microsoft" github="https://github.com/SteveLasker" >}}
-(Term: 2020-01-29 → 2022-01-29)
+{{< card img="/img/tob/Steve-Lasker.jpeg" name="Steve Lasker" termdates="2020-01-29 → 2022-01-29" company="Microsoft" github="https://github.com/SteveLasker" >}}
 {{< /card >}}
 
-{{< card img="/img/tob/Derek-McGowan.png" name="Derek McGowan" company="Docker" github="https://github.com/dmcgowan" >}}
-(Term: 2019-01-29 → 2021-01-29)
+{{< card img="/img/tob/Derek-McGowan.png" name="Derek McGowan" termdates="2019-01-29 → 2021-01-29" company="Docker" github="https://github.com/dmcgowan" >}}
 {{< /card >}}
 
-{{< card img="/img/tob/Aleksa-Sarai.jpeg" name="Aleksa Sarai" company="SUSE" github="https://github.com/cyphar" twitter="https://twitter.com/lordcyphar" personal="https://www.cyphar.com/" >}}
-(Term: 2019-01-29 → 2021-01-29)
-
+{{< card img="/img/tob/Aleksa-Sarai.jpeg" name="Aleksa Sarai" termdates="2019-01-29 → 2021-01-29" company="SUSE" github="https://github.com/cyphar" twitter="https://twitter.com/lordcyphar" personal="https://www.cyphar.com/" >}}
 Aleksa Sarai is a core developer and maintainer of runc and umoci, contributor
 and maintainer of Open Container Initiative specifications, and a Linux kernel
 contributor. He works on the containers team at SUSE, maintaining various core
