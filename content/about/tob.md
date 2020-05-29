@@ -76,7 +76,7 @@ Maintainer of the CNCF's containerd project.
 Software engineer at Google working on containers.
 {{< /card >}}
 
-{{< card img="/img/tob/Samuel-Karp.jpeg" name="Samuel Karp" company="Amazon Web Services" >}}
+{{< card img="/img/tob/Samuel-Karp.jpeg" name="Samuel Karp" company="Amazon Web Services" github="https://github.com/samuelkarp" twitter="https://twitter.com/samuelkarp" personal="https://samuelkarp.com" >}}
 (Term: 2020-01-29 → 2022-01-29)
 
 Samuel Karp is a Senior Software Development Engineer working on containers at
