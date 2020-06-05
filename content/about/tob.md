@@ -68,7 +68,7 @@ source for 15 years.
 Maintainer of the CNCF's containerd project.
 {{< /card >}}
 
-{{< card name="Jon Johnson" termdates="2020-01-29 → 2022-01-29" company="Google" >}}
+{{< card name="Jon Johnson" termdates="2020-01-29 → 2022-01-29" company="Google" github="https://github.com/jonjohnsonjr" >}}
 Software engineer at Google working on containers.
 {{< /card >}}
 
