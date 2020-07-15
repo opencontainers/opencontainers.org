@@ -9,6 +9,11 @@ summaryLength = 15
 [markup.highlight]
 style = "paraiso-dark"
 
+[markup]
+  [markup.tableOfContents]
+    endLevel = 5
+    startLevel = 2
+
 [params]
 font_awesome_version = "5.12.0"
 description = "The **Open Container Initiative** is an open governance structure for the express purpose of creating open industry standards around container formats and runtimes."
@@ -89,14 +94,26 @@ url = "/about/security-disclosure"
 weight = 70
 
 [[menu.main]]
-name = "Community"
-identifier ="community"
+name = "Specs"
+identifier = "specs"
 url = "#"
 weight = 20
 
 [[menu.main]]
+name = "Distribution spec"
+parent = "specs"
+url = "/specs/distribution-spec/"
+weight = 10
+
+[[menu.main]]
+name = "Community"
+identifier = "community"
+url = "#"
+weight = 30
+
+[[menu.main]]
 name = "Overview"
-parent ="community"
+parent = "community"
 url = "/community/overview"
 weight = 10
 
@@ -110,19 +127,19 @@ weight = 20
 name = "Join"
 identifier ="join"
 url = "/join"
-weight = 30
+weight = 40
 
 [[menu.main]]
 name = "Blog"
 identifier ="blog"
 url = "/posts/blog"
-weight = 40
+weight = 50
 
 [[menu.main]]
 name = "News"
 identifier ="news"
 url = "#"
-weight = 50
+weight = 60
 
 [[menu.main]]
 name = "Announcements"
@@ -140,7 +157,7 @@ weight = 20
 name = "FAQ"
 identifier ="faq"
 url = "/faq"
-weight = 60
+weight = 70
 
 [[menu.main]]
 name = "Release notices"
