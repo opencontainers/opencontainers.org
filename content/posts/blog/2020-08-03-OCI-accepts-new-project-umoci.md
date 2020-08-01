@@ -1,0 +1,20 @@
+---
+title: OCI accepts new project: umoci
+author:
+  name: Open Container Initiative
+  tag: oci
+tags: blog
+date: 2020-08-03
+---
+
+The Open Container Initiative (OCI) Technical Oversight Board (TOB) recently voted to approve a new project, [umoci](https://github.com/opencontainers/umoci). This new project will help OCI advance its mission to promote a set of common, minimal, open standards and specifications around container technology.
+
+umoci has been adopted as the reference implementation of the [OCI Image Specification](https://github.com/opencontainers/image-spec). This provides users with a seamless way to create, manipulate, and interact with container images. umoci is designed to act as the foundation for larger systems to be built on top of. 
+
+umoci was originally developed in 2016 by Aleksa Sarai as part of the openSUSE project, to allow both SUSE and openSUSE to build fully-fledged container images as part of their existing build infrastructure and processes. Current users of umoci include [KIWI](https://github.com/OSInside/kiwi), [LXC](https://linuxcontainers.org/), the [Open Build Service](https://openbuildservice.org/), [Stacker](https://github.com/anuvu/stacker), and [Zot](https://github.com/anuvu/zot).
+
+“I am thrilled for umoci to be part of the OCI family of projects,” said Aleksa Sarai, senior software engineer at SUSE and lead developer of umoci. “We needed a lower-level tool like umoci at SUSE, but no such tool existed at the time. From the outset, I intended for umoci to help the wider OCI community build tooling around the OCI image format by abstracting away most of the busy-work needed to implement the specification -- and in turn, the development of umoci did have an impact during the specification development (such as formalizing the conversion between OCI image configuration and OCI runtime bundle configuration). There is still plenty of interesting work to be done in umoci, and I encourage folks who are interested in the subject to give us a hand.”
+
+“We are very excited to welcome these projects into the OCI  – it has been a long time coming and the culmination of a lot of work by the TOB and project creators,” said Chris Aniszczyk, executive director of the Open Container Initiative. “umoci and ORAS will provide users with a simple way of creating, updating, and storing container images, and a method for publishing and retrieving any type of content to or from an OCI registry.”
+
+As an OCI project, umoci is bound by the [OCI Code of Conduct](https://github.com/opencontainers/.github/blob/master/CODE_OF_CONDUCT.md) and the [OCI Charter](https://github.com/opencontainers/tob/blob/master/CHARTER.md). umoci has its own [specific governance](https://umo.ci/GOVERNANCE.md) rules which determine how changes are accepted into the project, how maintainers are added or removed, how releases are proposed and released, and how the governance rules are changed.
