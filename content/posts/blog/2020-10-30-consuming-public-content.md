@@ -75,34 +75,33 @@ To balance the consumption with velocity desire against the reliability and secu
 
 Maintaining a gated and verified copy of the content you require will take time to implement. As we head into the end-of-year holiday period, organizations tend to lock down their development and deployments.
 
-When estimating the number of container image pull requests that may occur, take into account that when using cloud provider services or working behind a corporate NAT multiple users will be presented to Docker Hub in aggregate as a subset of IP addresses. This means your first anonymous request for a container image may be the 101st anonymous request from a specific shared IP address in the last six hours. Adding [Docker paid account authentication](https://docs.docker.com/docker-hub/download-rate-limit/#how-do-i-authenticate-pull-requests) to requests made to Docker Hub is a sure way to avoid potential service disruptions due to the new rate limit throttling that Docker is introducing on the first of November, 2020.
+When estimating the number of container image pull requests that may occur, take into account that when using cloud provider services or working behind a corporate NAT, multiple users will be presented to Docker Hub in aggregate as a subset of IP addresses. This means your first anonymous request for a container image may be the 101st anonymous request from a specific shared IP address in the last six hours. Adding [Docker paid account authentication](https://docs.docker.com/docker-hub/download-rate-limit/#how-do-i-authenticate-pull-requests) to requests made to Docker Hub is a sure way to avoid potential service disruptions due to the new rate limit throttling that Docker is introducing on the first of November, 2020.
 
 ## Longer-Term Gated Workflows
 
 The Docker TOS updates give us an opportunity to focus on the larger challenges with consuming public content. If you depend on public content, we recommend configuring a workflow that imports the content, security scans the content based on your organization's scanning policies, runs functional and integration tests to assure this most recent version of the content meets all expectations, then promote the validated content to a location your team(s) can utilize. The list of validations may start small, and evolve as new potential issues surface.
 
-We also recommend implementing a scheduled job that periodically checks for updates, including security updates to existing tags. And we further recommend to never let friends build against a :latest tag if at all possible
+We also recommend implementing a scheduled job that periodically checks for updates, including security updates to existing tags. We further recommend to never let friends build against a `:latest` tag if at all possible.
 
 ![image alt text](/img/blog/2020-10-30-consuming-public-content/consuming2.png)
 
 Over the next few months, we will bring focus to gated workflows, and proposals for how we can enable increased consumption of public content with reduced risk of the public content causing outages or negative impacts. We believe a set of standards for properly processing public content through gated workflows will help elevate the consumption of the content while enabling healthy competition on how to best implement and support these gated workflows. Building gated workflows enables developers and project teams to take more risk with respect to the velocity of change for public content.
 
-Every public emergency (hurricanes, Covid-19, etc) reminds us of the importance of keeping critical supplies close to where we function. The content we store in Registries are just another example of the same local-cache model employed by Emergency Services Teams.
+Every public emergency (hurricanes, Covid-19, etc) reminds us of the importance of keeping critical supplies close to where we function. The content we store in registries is just another example of the same local-cache model employed by Emergency Services Teams.
 
 ## Cloud & ISV Specific Guidance
 
-Whether it’s a true exploit, well-intended security update, or the result of humans being human ... it’s not a matter of **if**, rather **when consuming public content will have some negative impact on your workflow.**
+Whether it’s a true exploit, well-intended security update, the result of humans being human, or some other type of risk to the public content of our ecosystem... the rigor we apply today to mitigating these risks is well worth the effort.
 
-To understand how to implement docker authenticated pulls, mitigating the Docker TOS changes, and how you can gate and buffer public content in your cloud provider, the following links are provided:
+To understand how to implement Docker authenticated pulls, mitigating the Docker TOS changes, and how you can gate and buffer public content in your cloud provider, the following links are provided:
 
 * Docker™
 * [Azure™](https://aka.ms/consuming-public-content)
-* AWS™
-* [Google](https://cloud.google.com/blog/products/containers-kubernetes/mitigating-the-impact-of-new-docker-hub-pull-request-limits)™
+* [Google Cloud](https://cloud.google.com/blog/products/containers-kubernetes/mitigating-the-impact-of-new-docker-hub-pull-request-limits)™
 * [IBM™](https://cloud.ibm.com/docs/containers?topic=containers-registry)
 * VMware™
 * GitHub™
 
 ## Acknolwedgments
 
-This document was put together by Bryan Clark (GitHub), Phil Estes (IBM),Tianon Gravi (InfoSiftr), Steve Lasker (Microsoft), Chad Metcalf (Docker), Juan Sebastian Oviedo (Google) and Mark Peek (VMware) with input from the wider OCI community.
+This document was put together by Bryan Clark (GitHub), Phil Estes (IBM), Tianon Gravi (InfoSiftr), Steve Lasker (Microsoft), Chad Metcalf (Docker), Juan Sebastian Oviedo (Google) and Mark Peek (VMware) with input from the wider OCI community.
