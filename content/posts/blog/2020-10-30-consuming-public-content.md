@@ -21,11 +21,11 @@ While this article focuses on Docker Hub, this also applies to any container ima
 
 Do you use container based tooling:
 
-* **docker build FROM debian** (or any other public image)?
+* **`docker build` `FROM debian`** (or any other public image)?
 
-* **docker run nginx** (or other public images)?
+* **`docker run nginx`** (or other public images)?
 
-* **helm install stable/cert-manager** (or other helm charts that pull images from public registries)?
+* **`helm install stable/cert-manager`** (or other helm charts that pull images from public registries)?
 
 If so, this article applies to you.
 
