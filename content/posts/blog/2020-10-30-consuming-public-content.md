@@ -61,7 +61,7 @@ As registry operators, we are often asked to support a pull-through cache and/or
 
 * For those container image reference scenarios that pin to a digest (sha pointing to a specific image), how would you get the security update that you want and/or need if you are still pointing to an old version? 
 
-* With respect to customer-specific, authenticated access only, container images that customers store on public registries, what are these customer’s expectations for caching and distribution of their authenticated content at the mirror or host?
+* With respect to customer-specific, authenticated-access-only container images that customers store on public registries, what are these customer’s expectations for caching and distribution of their authenticated content at the mirror or host?
 
 While mirrors appear to reflect goodness, mirrors can create a false sense of security. When the connections are valid, they will bring the upstream changes to your local mirror, whether the change is what you want or not. As an example, it’s not always the technology that fails us, in some cases failures arise as a result of our human nature. As an example; Node modules are mirrored through global CDNs. Through a series of human interactions, [one programmer broke the internet by deleting a tiny piece of "left-pad" code](https://qz.com/646467/how-one-programmer-broke-the-internet-by-deleting-a-tiny-piece-of-code). In this case, the technology did just what it was asked, it mirrored the change.
 
