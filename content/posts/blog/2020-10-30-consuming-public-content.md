@@ -59,7 +59,7 @@ As registry operators, we are often asked to support a pull-through cache and/or
 
 * If a tag is updated to point to a "broken" image, such as the [node/yarn](https://github.com/nodejs/docker-node/issues/649) example, subsequent requests will pull the “broken” image. This begs the question, when the tag is updated to fix a first issue, at what point should the mirror know to update the cached reference?
 
-* For those container image reference scenarios that pin to a digest(sha pointing to a specific image), how would you get the security update that you want and/or need if you are still pointing to an old version? 
+* For those container image reference scenarios that pin to a digest (sha pointing to a specific image), how would you get the security update that you want and/or need if you are still pointing to an old version? 
 
 * With respect to customer-specific, authenticated access only, container images that customers store on public registries, what are these customer’s expectations for caching and distribution of their authenticated content at the mirror or host?
 
