@@ -31,9 +31,9 @@ If so, this article applies to you.
 
 ## Consuming Any Public Content
 
-The overarching public content distribution problem isn’t limited to who should bear the cost for public content, but rather also encompasses who bears the responsibility of assuring the content is accessible and secure for your environment, 100% of the time. The recent Docker TOS changes encourage us to ask a broader set of questions that, as a community, we can address. The problem isn’t limited to production container images but extends to all package manager content (debs, rpms, rubygems, node modules, etc).
+The overarching public content distribution problem isn’t limited to who should bear the cost for public content, but rather also encompasses who bears the responsibility of assuring the content is accessible and secure for your environment, 100% of the time. The recent Docker Terms of Service (TOS) changes encourage us to ask a broader set of questions that, as a community, we can address. The problem isn’t limited to production container images but extends to all package manager content (debs, rpms, rubygems, node modules, etc).
 
-While the Docker Terms of Service (TOS) update directly imposes throttling on frequent non-authenticated and free account content pulls, which may impact critical workloads, it also raises the question of how and when public content should impact critical workloads.
+While the Docker TOS update directly imposes throttling on frequent non-authenticated and free account content pulls, which may impact critical workloads, it also raises the question of how and when public content should impact critical workloads.
 
 ## Single Points of Failure
 
@@ -53,14 +53,13 @@ Some parts of the ecosystem are not as drastically impacted by availability issu
 
 ## Mirrors Reflect the Good and the Bad
 
-As registry operators, we are often asked to support a pull-through cache and/or registry mirror. While this type of availability improvement does mitigate some of the network reliability issues, and some registries implement mirrors, these types of improvement only partially cover the range of issues users face. Example issues:
+As registry operators, we are often asked to support a pull-through cache and/or registry mirror. While this type of availability improvement does mitigate some of the network reliability issues, and some registries implement mirrors, these types of improvements only partially cover the range of issues users face.
+
+Example issues include:
 
 * If the online content is accessible for the first request, subsequent requests can leverage the cached content. If the request is made during an outage, there is no guarantee the requested image is cached.
-
-* If a tag is updated to point to a "broken" image, such as the [node/yarn](https://github.com/nodejs/docker-node/issues/649) example, subsequent requests will pull the “broken” image. This begs the question, when the tag is updated to fix a first issue, at what point should the mirror know to update the cached reference?
-
-* For those container image reference scenarios that pin to a digest (sha pointing to a specific image), how would you get the security update that you want and/or need if you are still pointing to an old version? 
-
+* If a tag is updated to a "broken" image, such as the [node/yarn](https://github.com/nodejs/docker-node/issues/649) example, subsequent requests will pull the “broken” image. This begs the question, when the tag is updated to fix a first issue, at what point should the mirror know to update the cached reference?
+* For those container image reference scenarios that pin to a digest (sha pointing to a specific image), how would you get the security update that you want and/or need if you are still pointing to an old version?
 * With respect to customer-specific, authenticated-access-only container images that customers store on public registries, what are these customer’s expectations for caching and distribution of their authenticated content at the mirror or host?
 
 While mirrors appear to reflect goodness, mirrors can create a false sense of security. When the connections are valid, they will bring the upstream changes to your local mirror, whether the change is what you want or not. As an example, it’s not always the technology that fails us, in some cases failures arise as a result of our human nature. As an example; Node modules are mirrored through global CDNs. Through a series of human interactions, [one programmer broke the internet by deleting a tiny piece of "left-pad" code](https://qz.com/646467/how-one-programmer-broke-the-internet-by-deleting-a-tiny-piece-of-code). In this case, the technology did just what it was asked, it mirrored the change.
@@ -69,7 +68,7 @@ While mirrors appear to reflect goodness, mirrors can create a false sense of se
 
 Consuming public content, including open source projects & paid content, is key to maintaining the development velocity by which developers are required to serve their users, which explains a Gartner study finding that [90% of software will include open source](https://www.cnet.com/news/90-percent-of-saas-providers-to-use-open-source-by-2010/). While developers and consumers are pushing for velocity, our security and operations workers are pushing for a focus on the reliability and security of the public content.
 
-To balance the consumption with velocity desire against the reliability and security desires, we suggest adopting gated & verified workflows to enable the safe and secure use of rapidly deployed public content. While production deployments are the most obvious, maintaining a gated copy of the images you **build `FROM`** is just as important. Organizations should keep local copies of everything they depend upon, while building CI/CD workflows that update and validate their gated dependencies. For example, companies that maintained local gated copies of the javascript libraries they depend upon would have completely missed the production outages caused in the above cited example when the left-pad code was removed.
+To balance the consumption with velocity desired, against the reliability and security desires, we suggest adopting gated & verified workflows to enable the safe and secure use of rapidly deployed public content. While production deployments are the most obvious, maintaining a gated copy of the images you **build `FROM`** is just as important. Organizations should keep local copies of everything they depend upon, while building CI/CD workflows that update and validate their gated dependencies. For example, companies that maintained local gated copies of the javascript libraries they depend upon would have completely missed the production outages caused in the above cited example when the left-pad code was removed.
 
 ## Short Term Throttling Mitigations
 
@@ -81,7 +80,7 @@ When estimating the number of container image pull requests that may occur, take
 
 The Docker TOS updates give us an opportunity to focus on the larger challenges with consuming public content. If you depend on public content, we recommend configuring a workflow that imports the content, security scans the content based on your organization's scanning policies, runs functional and integration tests to assure this most recent version of the content meets all expectations, then promote the validated content to a location your team(s) can utilize. The list of validations may start small, and evolve as new potential issues surface.
 
-We also recommend implementing a scheduled job that periodically checks for updates, including security updates to existing tags. We further recommend to never let friends build against a `:latest` tag if at all possible.
+We also recommend implementing a scheduled job that periodically checks for updates, including security updates to existing tags. We further recommend to never let friends build against a `:latest` tag, if at all possible.
 
 ![image alt text](/img/blog/2020-10-30-consuming-public-content/consuming2.png)
 
@@ -102,6 +101,6 @@ To understand how to implement Docker authenticated pulls, mitigating the Docker
 * VMware™
 * GitHub™
 
-## Acknolwedgments
+## Acknowledgments
 
-This document was put together by Bryan Clark (GitHub), Phil Estes (IBM), Tianon Gravi (InfoSiftr), Steve Lasker (Microsoft), Chad Metcalf (Docker), Juan Sebastian Oviedo (Google) and Mark Peek (VMware) with input from the wider OCI community.
+This document was put together by Bryan Clark (GitHub), Phil Estes (IBM), Tianon Gravi (InfoSiftr), Steve Lasker (Microsoft), Chad Metcalf (Docker), Juan Sebastian Oviedo (Google Cloud) and Mark Peek (VMware) with input from the wider OCI community.
