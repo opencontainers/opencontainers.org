@@ -11,7 +11,7 @@ A workflow enabling reliability, security, and performance
 
 Developers are increasingly contributing to and consuming more public content for our container-based ecosystem. However, as community efforts of the past have proven, risks must be considered and mitigations put in place to protect the entire ecosystem, as well as your project, product, or service.
 
-On November 1st, 2020, [Docker Hub will begin limiting anonymous and free account image pulls](https://docs.docker.com/docker-hub/download-rate-limit/). While some may be upset about the change, it reflects a larger reality that takes some consideration for the risks associated with consuming public content, not just the costs for hosting public content.
+On November 1st, 2020, [Docker Hub will begin limiting anonymous and free account image pulls](https://docs.docker.com/docker-hub/download-rate-limit/). While some may be upset about the change, it reflects a larger reality that takes some consideration for the risks associated with consuming public content, not just the costs for hosting public content. Also please note that *consumers who have a subscription do not have limits and the rate limiting is only for non-paying users*.
 
 As a community, the cloud providers, ISVs, and members of the [OCI TOB](https://github.com/opencontainers/tob#members) co-authored this article to provide context, considerations as to how you might be impacted, and mitigations for the pending changes such as what you can do to avoid interruptions to your workflow.
 
