@@ -1,7 +1,7 @@
 ---
 title: Consuming Public Content
 author:
-  name: Open Container Initiative
+  name: Bryan Clark (GitHub), Phil Estes (IBM), Dan Garfield (Codefresh), Tianon Gravi (InfoSiftr), Steve Lasker (Microsoft), Chad Metcalf (Docker), Mark Peek (VMware) and Juan Sebastian Oviedo (Google Cloud) with input from the wider OCI community
   tag: oci
 tags: blog
 date: 2020-10-30
@@ -47,9 +47,9 @@ If Docker, Quay, GitHub, or other public registries undertake the financial burd
 
 ## Not Just Docker Images
 
-Docker images aren’t the only type of public content we depend upon. Our eco-system regularly consumes content from javascript libraries; npm, nuget, rpm, debian, maven, helm charts, and other package managers; as well as public git sources and tarballs. So, is this a problem unique to container images? We submit there are two dimensions at play here; size(1) and frequency(2). And both dimensions apply to the dependent content our solutions need when running container images. Managing these assets has a direct impact on our production workloads that are designed to automatically self-heal and scale. When a workload automatically scales up, and a registry is inaccessible, due to DNS, CDN, or any other potential single points of failure, an immediate, and likely critical, production issue may occur. As pictured above, these single points of failure can directly impact multiple clouds, thousands of apps, and millions of end users (e.g. developers, consumers, downstream web sites, …).
+Docker images aren’t the only type of public content we depend upon. Our eco-system regularly consumes content from javascript libraries; Npm, NuGet, rpm, Debian, maven, Helm charts, and other package managers; as well as public git sources and tarballs. So, is this a problem unique to container images? We submit there are two dimensions at play here; size(1) and frequency(2). Both dimensions apply to the dependent content our solutions need when running container images. Managing these assets has a direct impact on our production workloads that are designed to automatically self-heal and scale. When a workload automatically scales up, and a registry is inaccessible, due to DNS, CDN, or any other potential single points of failure, an immediate, and likely critical, production issue may occur. As pictured above, these single points of failure can directly impact multiple clouds, thousands of apps, and millions of end users (e.g. developers, consumers, downstream web sites, …).
 
-Some parts of the ecosystem are not as drastically impacted by availability issues. For example, npm, rpm, nuget and other packages are smaller in size and are typically used as part of a build & test workflow. While an outage of package managers will fail builds and tests, frustrating DevOps engineers, these problems are typically gated by deployment validation(s), thus avoiding production outages and end-user impacts.
+Some parts of the ecosystem are not as drastically impacted by availability issues. For example, Npm, rpm, NuGet and other packages are smaller in size and are typically used as part of a build & test workflow. While an outage of package managers will fail builds and tests, frustrating DevOps engineers, these problems are typically gated by deployment validation(s), thus avoiding production outages and end-user impacts.
 
 ## Mirrors Reflect the Good and the Bad
 
@@ -74,7 +74,7 @@ To balance the consumption with velocity desired, against the reliability and se
 
 Maintaining a gated and verified copy of the content you require will take time to implement. As we head into the end-of-year holiday period, organizations tend to lock down their development and deployments.
 
-When estimating the number of container image pull requests that may occur, take into account that when using cloud provider services or working behind a corporate NAT, multiple users will be presented to Docker Hub in aggregate as a subset of IP addresses. This means your first anonymous request for a container image may be the 101st anonymous request from a specific shared IP address in the last six hours. Adding [Docker paid account authentication](https://docs.docker.com/docker-hub/download-rate-limit/#how-do-i-authenticate-pull-requests) to requests made to Docker Hub is a sure way to avoid potential service disruptions due to the new rate limit throttling that Docker is introducing on the first of November, 2020.
+When estimating the number of container image pull requests that may occur, take into account that when using cloud provider services or working behind a corporate NAT, multiple users will be presented to Docker Hub in aggregate as a subset of IP addresses. This means your first anonymous request for a container image may be the 101st anonymous request from a specific shared IP address in the last six hours. Consider what will happen if a Kubernetes pod restarts and can’t pull the image it needs into a critical workload. Adding [Docker paid account authentication](https://docs.docker.com/docker-hub/download-rate-limit/#how-do-i-authenticate-pull-requests) to requests made to Docker Hub is a sure way to avoid potential service disruptions due to the new rate limit throttling that Docker is introducing on the first of November, 2020.
 
 ## Longer-Term Gated Workflows
 
@@ -94,13 +94,8 @@ Whether it’s a true exploit, well-intended security update, the result of huma
 
 To understand how to implement Docker authenticated pulls, mitigating the Docker TOS changes, and how you can gate and buffer public content in your cloud provider, the following links are provided:
 
-* Docker™
 * [Azure™](https://aka.ms/consuming-public-content)
+* [Docker™](https://docs.docker.com/docker-hub/download-rate-limit/)
 * [Google Cloud](https://cloud.google.com/blog/products/containers-kubernetes/mitigating-the-impact-of-new-docker-hub-pull-request-limits)™
 * [IBM™](https://cloud.ibm.com/docs/containers?topic=containers-registry)
-* VMware™
-* GitHub™
-
-## Acknowledgments
-
-This document was put together by Bryan Clark (GitHub), Phil Estes (IBM), Tianon Gravi (InfoSiftr), Steve Lasker (Microsoft), Chad Metcalf (Docker), Juan Sebastian Oviedo (Google Cloud) and Mark Peek (VMware) with input from the wider OCI community.
+* [VMware™](https://tanzu.vmware.com/content/blog/harbor-to-the-rescue-operating-a-secure-registry-without-restrictive-pull-policies)
