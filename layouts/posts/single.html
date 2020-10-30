@@ -1,11 +1,11 @@
 {{ define "main" }}
-<article class="mt-20 mb-10">
-  <div class="px-10 pt-10 pb-5 single-header">
+<article class="mt-5 mb-5 lg:mt-20 lg:mb-10">
+  <div class="px-3 pt-10 pb-5 lg:px-10 single-header">
     {{ partial "single-title.html" . }}
     <p class="pb-5 meta">{{ .Date.Format "Monday, January 2, 2006" }} by {{ $.Param "author.name" }}</p>
     {{ partial "social-share.html" . }}
   </div>
-  <div class="px-32 py-24 bg-white content">
+  <div class="px-3 py-3 bg-white lg:px-32 lg:py-24 content">
     {{ with $.Param "subhead" }}
       <h3>{{ $.Param "subhead" }}</h3>
     {{ end }}

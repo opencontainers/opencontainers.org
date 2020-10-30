@@ -2,16 +2,16 @@
 {{ $isfullwidth := .Params.fullwidth }}
 {{ $hastoc := .Params.toc }}
 
-<article class="mt-20 mb-10">
-  <div class="px-10 pt-10 pb-5 single-header">
+<article class="mt-5 mb-5 lg:mt-20 lg:mb-10">
+  <div class="px-3 pt-10 pb-5 lg:px-10 single-header">
     {{ partial "single-title.html" . }}
   </div>
-  <div class="grid grid-cols-3 py-12 px-20 bg-white content">
-    <div class="content m-2 xs:col-span-3 lg:col-span-2 {{ if ($isfullwidth) }}lg:col-span-3{{ end }}">
+  <div class="grid grid-cols-3 px-3 py-12 bg-white lg:px-20 content">
+    <div class="content lg:m-2 xs:col-span-3 lg:col-span-2 {{ if ($isfullwidth) }}lg:col-span-3{{ end }}">
       {{ .Content }}
     </div>
     {{ if ne ($isfullwidth) }}
-    <div class="content xs:col-span-3 lg:col-span-1 text-sm">
+    <div class="text-sm content xs:col-span-3 lg:col-span-1">
       {{ if ($hastoc) }}
         On this page:
         {{ .TableOfContents }}
