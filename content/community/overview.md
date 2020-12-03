@@ -11,19 +11,17 @@ The technical community working on developing standards around container formats
 
 ## Open meetings
 
-The technical community hosts an open meeting monthly on Wednesdays rotating between 08:00 AM PDT and 17:00 PM PDT. Everyone is welcome to participate via [Zoom](https://zoom.my.us/opencontainers).  An initial agenda will be posted to the [mailing list](https://groups.google.com/a/opencontainers.org/forum/#!forum/dev) earlier in the week, and everyone is welcome to propose additional topics or suggest other agenda alterations there. Minutes are posted to the mailing list and minutes from past calls are archived to the [wiki](https://github.com/opencontainers/runtime-spec/wiki) for those who are unable to join the call.
+The technical community hosts a weekly open meeting, currently held on Wednesdays at 2:00 PM (US Pacific). Everyone is welcome to participate via [Zoom](https://zoom.my.us/opencontainers).  Our agenda is maintained on our [HackMD page](https://hackmd.io/El8Dd2xrTlCaCG59ns5cwg), and everyone is welcome to propose additional topics or suggest other agenda alterations there. Minutes are embedded in the HackMD document and recordings are made available on our [YouTube channel](https://www.youtube.com/channel/UCpGceic1q4-3Tai0kgeBcwg) for those who are unable to join the call.
 
 ## Mailing list 
 
 - [Google Group (developer community)](https://groups.google.com/a/opencontainers.org/forum/#!forum/dev)
 
-## IRC 
+## Chat 
 
-For developers, join #opencontainers on freenode.net (try a web client: https://kiwiirc.com/client)
-
-## Slack 
-
-http://chat.opencontainers.org/  (Project Management + Staff)
+Given the existence of both pre-Slack communication via IRC and the adoption of Slack by many communities, we have a bridge between the
+IRC channel #opencontainers on freenode.net and the #general channel on [OCI Slack](https://chat.opencontainers.org). For Matrix users, this channel
+is also bridged to #opencontainers:matrix.org.
 
 ## GitHub 
 
@@ -32,6 +30,9 @@ http://chat.opencontainers.org/  (Project Management + Staff)
 - [runtime-tools](https://github.com/opencontainers/runtime-tools) / [image-tools](https://github.com/opencontainers/image-tools)
 - [go-digest](https://github.com/opencontainers/go-digest) / [selinux](https://github.com/opencontainers/selinux)
 - [distribution-spec](https://github.com/opencontainers/distribution-spec)
+- [artifacts](https://github.com/opencontainers/artifacts)
+- [umoci](https://github.com/opencontainers/umoci)
+- [oci-conformance](https://github.com/opencontainers/oci-conformance)
 
 ## Technical oversight board (TOB) 
 
