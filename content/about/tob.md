@@ -53,15 +53,13 @@ as the Go compiler for Fedora and Red Hat.
 {{< card img="/img/tob/Michael-Crosby.jpeg" name="Michael Crosby" termdates="2019-01-29 → 2021-01-29" company="Apple" github="https://github.com/crosbymichael" twitter="https://twitter.com/crosbymichael" >}}
 {{< /card >}}
 
-{{< card img="/img/tob/Phil-Estes.jpg" name="Phil Estes" termdates="2020-01-29 → 2022-01-29" title="TOB Chair" company="IBM" github="https://github.com/estesp" twitter="https://twitter.com/estesp" >}}
-Phil is an open source leader and cloud native expert within IBM Cloud's Office
-of the CTO.
+{{< card img="/img/tob/Phil-Estes.jpg" name="Phil Estes" termdates="2020-01-29 → 2022-01-29" title="TOB Chair" company="AWS" github="https://github.com/estesp" twitter="https://twitter.com/estesp" >}}
+Phil is a principal engineer at Amazon Web Services working on core container
+technologies.
 
-Phil is an open source contributor and maintainer for Docker's Moby project, a
-maintainer for the CNCF containerd project, and a contributor to the OCI
-runc/libcontainer spec implementation. Phil also sits on the Moby Technical
-Steering Committee (TSC) and has been actively involved in Linux and open
-source for 15 years.
+Phil participates as an open source contributor and maintainer for the
+CNCF containerd project and has been active in the OCI since its founding
+in 2015.
 {{< /card >}}
 
 {{< card img="/img/tob/Wei-Fu.jpeg" name="Wei Fu" termdates="2020-01-29 → 2022-01-29" company="Alibaba" github="https://github.com/fuweid">}}
