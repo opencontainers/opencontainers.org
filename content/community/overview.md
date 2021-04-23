@@ -1,5 +1,5 @@
 ---
-title: "Community Overview"
+title: "Community Overivew"
 aliases: 
   - "/community"
 toc: true
