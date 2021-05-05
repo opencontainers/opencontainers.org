@@ -3,7 +3,7 @@ title: OCI Distribution Specification v1.0
 author:
   name: Open Container Initiative
   tag: oci
-tags: blog
+tags: announcements
 date: 2020-05-04
 ---
 
