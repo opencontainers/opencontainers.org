@@ -14,7 +14,6 @@ To make changes to https://opencontainers.org, create a fork of this repository 
 ## Prerequisites 
 
 - Read and abide by the [code of conduct](https://github.com/opencontainers/.github/blob/master/CODE_OF_CONDUCT.md)
-- Sign the [CNCF CLA](https://github.com/kubernetes/community/blob/master/CLA.md)
 
 ## Running locally
 
