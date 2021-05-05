@@ -4,7 +4,7 @@ author:
   name: Open Container Initiative
   tag: oci
 tags: announcements
-date: 2020-05-04
+date: 2021-05-04
 ---
 
 The Open Container Initiative (OCI), an open source community for creating open standards around containers, today announced that the [OCI Distribution Specification](https://github.com/opencontainers/distribution-spec) has reached version 1.0!
