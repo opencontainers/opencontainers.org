@@ -1,5 +1,5 @@
-SPEC_DISTRIBUTION_REPO ?= https://github.com/bloodorangeio/distribution-spec.git
-SPEC_DISTRIBUTION_BRANCH ?= reorg-demo
+SPEC_DISTRIBUTION_REPO ?= https://github.com/opencontainers/distribution-spec.git
+SPEC_DISTRIBUTION_BRANCH ?= v1.0.0
 SPEC_DISTRIBUTION_FILEPATH ?= spec.md
 
 get-specs:
@@ -17,11 +17,11 @@ serve: yarn
 		--buildFuture \
 		--disableFastRender
 
-production-build:
+production-build: get-specs
 	hugo \
 		--minify
 
-preview-build:
+preview-build: get-specs
 	hugo \
 		--baseURL $(DEPLOY_PRIME_URL) \
 		--buildDrafts \
