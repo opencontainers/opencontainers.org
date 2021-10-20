@@ -42,7 +42,7 @@ Users can fully commit to container technologies today without worrying that the
 
 The individuals behind the appc effort have joined the technical leadership of the OCI, and our intention is to work towards both a common format that is compatible with existing container formats as well as to work on a future spec that combines the best elements of all the existing container efforts.
 
-##What are the drivers for this container specification?
+## What are the drivers for this container specification?
 
 - A container not bound to higher level constructs such as a particular client or orchestration stack, and
 - A container not tightly associated with any particular commercial vendor or project, and
