@@ -11,7 +11,7 @@ The technical community working on developing standards around container formats
 
 ## Open meetings
 
-The technical community hosts a weekly open meeting, currently held on Wednesdays at 2:00 PM (US Pacific). Everyone is welcome to participate via [Zoom](https://zoom.my.us/opencontainers).  Our agenda is maintained on our [HackMD page](https://hackmd.io/El8Dd2xrTlCaCG59ns5cwg), and everyone is welcome to propose additional topics or suggest other agenda alterations there. Minutes are embedded in the HackMD document and recordings are made available on our [YouTube channel](https://www.youtube.com/channel/UCpGceic1q4-3Tai0kgeBcwg) for those who are unable to join the call.
+The technical community hosts a weekly open meeting, currently held on Thursdays at 10:00 AM (US Pacific). Everyone is welcome to participate via [Zoom](https://zoom.my.us/opencontainers).  Our agenda is maintained on our [HackMD page](https://hackmd.io/El8Dd2xrTlCaCG59ns5cwg), and everyone is welcome to propose additional topics or suggest other agenda alterations there. Minutes are embedded in the HackMD document and recordings are made available on our [YouTube channel](https://www.youtube.com/channel/UCpGceic1q4-3Tai0kgeBcwg) for those who are unable to join the call.
 
 ## Mailing list 
 
