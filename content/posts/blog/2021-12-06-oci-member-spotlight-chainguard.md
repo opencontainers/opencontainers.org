@@ -10,7 +10,9 @@ date: 2021-12-06
 The OCI community comprises a diverse set of member companies that are committed to creating open industry standards around containers. This blog series highlights OCI members and their contributions.  
 
 **Name:** [Dan Lorenc](https://twitter.com/lorenc_dan)
+
 **Title:** Founder and CEO
+
 **Company:** [Chainguard](https://chainguard.dev)
 
 **Why did you join OCI and how is your organization involved?** 
