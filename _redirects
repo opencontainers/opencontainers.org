@@ -1,0 +1,2 @@
+# Redirects from what the browser requests to what we serve
+/about/governance https://github.com/opencontainers/tob/blob/main/CHARTER.md
