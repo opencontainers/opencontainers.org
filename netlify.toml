@@ -10,3 +10,11 @@ command = "make preview-build"
 
 [context.branch-deploy]
 command = "make preview-build"
+
+[[redirects]]
+  from = "/about/governance"
+  to = "https://github.com/opencontainers/tob/blob/main/CHARTER.md"
+  status = 301
+  force = false
+  query = {path = ":path"}
+
