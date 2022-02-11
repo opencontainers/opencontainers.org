@@ -50,14 +50,14 @@ The individuals behind the appc effort have joined the technical leadership of t
 
 ## What are the values guiding the OCI projects and specifications?
 
-- Composable. All tools for downloading, installing, and running containers should be well integrated, but independent and composable. Container formats and runtime should not be bound to clients, to higher level frameworks, etc.
-Portable: The runtime standard should be usable across different hardware, operating systems, and cloud environments.
-Secure. Isolation should be pluggable, and the cryptographic primitives for strong trust, image auditing and application identity should be solid.
-- Decentralized. Discovery of container images should be simple and facilitate a federated namespace and distributed retrieval.
-Open. The format and runtime should be well-specified and developed by a community. We want independent implementations of tools to be able to run the same container consistently.
-Code leads spec, rather than vice-versa. We seek rough consensus and running code.
+- Composable: All tools for downloading, installing, and running containers should be well integrated, but independent and composable. Container formats and runtime should not be bound to clients, to higher level frameworks, etc.
+- Portable: The runtime standard should be usable across different hardware, operating systems, and cloud environments.
+- Secure: Isolation should be pluggable, and the cryptographic primitives for strong trust, image auditing and application identity should be solid.
+- Decentralized: Discovery of container images should be simple and facilitate a federated namespace and distributed retrieval.
+- Open: The format and runtime should be well-specified and developed by a community. We want independent implementations of tools to be able to run the same container consistently.
+- Code leads spec, rather than vice-versa. We seek rough consensus and running code.
 - Minimalist: The spec should aim to do a few things well, be minimal and stable, and enable innovation and experimentation above and around it.
-Backward compatible: Given the broad adoption of the current Docker container format (8B+ container downloads to date), the new standard should strive be as backward compatible as possible with that format.
+- Backward compatible: Given the broad adoption of the current Docker container format (8B+ container downloads to date), the new standard should strive be as backward compatible as possible with that format.
 
 You will note that a lot of these are directly adopted from the appc founding values. We want to make sure that this effort combines the best ideas from all existing efforts in this space.
 
