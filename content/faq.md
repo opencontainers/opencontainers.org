@@ -116,9 +116,9 @@ A standard needs to live in a neutral place and is typically developed according
 Specifications are generally works in progress, often developed by one entity which may use content from one or more standards and may alter said content to meet different needs.  Specifications are usually specific to one scenario and can cover multiple areas and topics, whereas a standard is typically more general and usually narrow in focus.  Specifications can also include non-standard materials and can be easily revised.
 As we created the OCI, we wanted to be sure to have a trailing specification with leading implementations and to make things as lightweight as possible. The OCI is run more like a traditional open source project than a standards body, with a focus on running code through consensus. The OCI is providing a form and canvas for organizations to settle on rules for a variety of specs.
 
-## Will OCI ever add additional specifications– such as networking, inter-container communication, or distribution– to its scope?
+## Will OCI ever add additional specifications– such as networking, or inter-container communication to its scope?
 
-The OCI has purposefully been limited in scope, see the OCI Scope Table for more information. In the future, the scope may slightly expand to discuss items such as distribution, but there is nothing formally planned at the moment.
+The OCI has purposefully been limited in scope, see the OCI Scope Table for more information. In the future, the scope may slightly expand to discuss other items related to containers.
 
 ## When will v1.0.0 be released? What sort of release cadence should we expect moving forward?
 
