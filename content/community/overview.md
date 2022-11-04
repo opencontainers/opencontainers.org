@@ -20,7 +20,7 @@ The technical community hosts a weekly open meeting, currently held on Thursdays
 ## Chat 
 
 Given the existence of both pre-Slack communication via IRC and the adoption of Slack by many communities, we have a bridge between the
-IRC channel #opencontainers on freenode.net and the #general channel on [OCI Slack](https://chat.opencontainers.org). For Matrix users, this channel
+IRC channel #opencontainers on freenode.net and the #general channel on [OCI Slack]([https://chat.opencontainers.org](https://communityinviter.com/apps/opencontainers/join-the-oci-community)). For Matrix users, this channel
 is also bridged to #opencontainers:matrix.org.
 
 ## GitHub 
