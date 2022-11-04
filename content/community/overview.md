@@ -23,25 +23,6 @@ Given the existence of both pre-Slack communication via IRC and the adoption of 
 IRC channel #opencontainers on freenode.net and the #general channel on [OCI Slack]([https://chat.opencontainers.org](https://communityinviter.com/apps/opencontainers/join-the-oci-community)). For Matrix users, this channel
 is also bridged to #opencontainers:matrix.org.
 
-
-<div id="CommunityInviter"></div>
-<script>
-  window.CommunityInviterAsyncInit = function () {
-    CommunityInviter.init({
-      app_url:'join-the-oci-community',
-      team_id:'opencontainers'
-   })
-  };
-
-  (function(d, s, id){
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {return;}
-    js = d.createElement(s); js.id = id;
-    js.src = "https://communityinviter.com/js/communityinviter.js";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'Community_Inviter'));
-</script>
-
 ## GitHub 
 
 - [runc](https://github.com/opencontainers/runc)
