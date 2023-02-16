@@ -1,7 +1,7 @@
 ---
 title: OCI at The Container Plumbing Conference
 author: Scott McCarty
-  name: OCI at The Container Plumbing Conference
+  name: Open Container Initiative
   tag: oci
 tags: blog
 date: 2023-02-16
