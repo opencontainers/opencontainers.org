@@ -18,3 +18,8 @@ command = "make preview-build"
   force = false
   query = {path = ":path"}
 
+[[redirects]]
+  from = "chat.opencontainers.org"
+  to = "https://join.slack.com/t/opencontainers/shared_invite/zt-1xbl5uuk1-V~YZNUtLfhCC5oucI9tnfA"
+  status = 301
+  force = false
