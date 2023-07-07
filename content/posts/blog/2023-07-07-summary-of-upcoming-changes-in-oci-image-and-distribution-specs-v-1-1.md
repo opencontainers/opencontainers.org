@@ -149,6 +149,7 @@ Some other notable changes include the following:
 - extension support in distribution-spec
 - support for resuming chunked blob push
 - anonymous blob mount support in distribution-spec
+- a `Warning` header for surfacing user-facing client warnings
 
 We encourage you to take a look at both of the latest specs to see for yourself:
 
