@@ -31,7 +31,58 @@ outlined in this post.
 
 # List of Major Changes (3)
 
-## 1. New Registry API Endpoint for Querying Relationships
+## 1. Official Guidance on How to Create and Store Alternative (Even Non-Container) Artifacts
+
+For several years, people have been coming up with different ways to
+specify alternative (non-image) artifacts in the registry.
+
+One such method relied on using a custom value for the `config.mediaType`
+field on the image manifest. This is the same method used by tools such
+as Helm, OPA, WASM etc.
+
+In the new OCI releases, this behavior has been finally codified as
+a valid way of specifying this information.
+
+If you look at change #3 below, in the sample JSON response from the registry API,
+you will notice the new field `artifactType` on descriptors. The value of this field
+is either a.) the `artifactType` provided on the manifest when it is pushed or
+b.) the value of `config.mediaType` if the `artifactType` field is missing.
+
+TLDR; for new clients pushing artifacts, there is a new top-level field called
+`artifactType` which can be used to denote a custom, non-image artifact. If
+an object is instead pushed with a custom artifact type in the `config.mediaType`
+field (the old way), this value will be surfaced in the `artifactType` field
+in the API response.
+
+For more information, please see our
+[Guidelines for Artifact Usage](https://github.com/opencontainers/image-spec/blob/main/manifest.md#guidelines-for-artifact-usage).
+
+## 2. New Manifest Field for Establishing Relationships
+
+A new field called `subject` can now be included on manifests
+(including on an index) which points to another object in the registry:
+
+```json
+{
+...
+  "subject": {
+    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+    "digest": "sha256:5b0bca...",
+    "size": 7682
+  },
+...
+}
+```
+
+This is the primary mechanism for linking objects to one another. This
+is what is used to determine the proper list returned by the registry
+API endpoint described in #3 below.
+
+If the registry supports the processing of the `subject` field, it is required
+to respond with a header in the following form: `OCI-Subject: sha256:5b0bca...`
+( the value being the `digest` field in the `subject` JSON object).
+
+## 3. New Registry API Endpoint for Querying Relationships
 
 The following HTTP API endpoint has been added to enable
 querying for relationships between objects in the registry:
@@ -82,59 +133,21 @@ required to respond with a header indicating the filter(s) applied:
 `OCI-Filters-Applied: artifactType`. Note: the only filter defined at
 this time is `artifactType`.
 
-## 2. New Manifest Field for Establishing Relationships
-
-A new field called `subject` can now be included on manifests
-(including on an index) which points to another object in the registry:
-
-```json
-{
-...
-  "subject": {
-    "mediaType": "application/vnd.oci.image.manifest.v1+json",
-    "digest": "sha256:5b0bca...",
-    "size": 7682
-  },
-...
-}
-```
-
-This is the primary mechanism for linking objects to one another. This
-is what is used to determine the proper list returned by the API endpoint
-described in #1 above.
-
-If the registry supports the processing of the `subject` field, it is required
-to respond with a header in the following form: `OCI-Subject: sha256:5b0bca...`
-( the value being the `digest` field in the `subject` JSON object).
-
-## 3. Official Guidance on How to Specify Alternatative Artifacts
-
-For several years, people have been coming up with different ways to
-specify alternative (non-image) artifacts in the registry.
-
-One such method relied on using a custom value for the `config.mediaType`
-field on the image manifest. This is the same method used by tools such
-as Helm, OPA, WASM etc.
-
-In the new OCI releases, this behavior has been finally codified as
-a valid way of specifying this information.
-
-If you look again at #1 above, in the sample JSON response you will notice the
-new field `artifactType` on descriptors. The value of this field is either a.) the
-`artifactType` provided on the manifest when it is pushed or b.) the value of `config.mediaType` if the `artifactType` field is missing.
-
-TLDR; for new clients pushing artifacts, there is a new top-level field called
-`artifactType` which can be used to denote a custom, non-image artifact. If
-an object is instead pushed with a custom artifact type in the `config.mediaType`
-field (the old way), this value will be surfaced in the `artifactType` field
-in the API response.
-
 # Closing Thoughts
 
 This post attemts to cover all of the major changes involved in adopting
 OCI Image and Distribution specs v1.1, however there are several other
 fine-grained details which can only be understood by carefully reading
 through the specifications.
+
+Some other changes include:
+
+- `data`` field in the descriptor
+- non-distributable layers are deprecated
+- zstd compression support
+- extension support in distribution-spec
+- support for resuming chunked blob push
+- anonymous blob mount support in distribution-spec
 
 We encourage you to take a look at both of the latest specs to see for yourself:
 
