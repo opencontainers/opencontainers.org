@@ -1,11 +1,8 @@
-yarn:
-	yarn
+npm-install:
+	npm install
 
-serve: yarn
-	hugo server \
-		--buildDrafts \
-		--buildFuture \
-		--disableFastRender
+serve: npm-install 
+	npm run serve
 
 production-build:
 	hugo \
