@@ -8,8 +8,8 @@ date: 2023-07-07
 ---
 
 As mentioned in an [earlier post](./2023-01-26-oci-in-2023.md), the
-OCI Reference Types Working Group delivered a suggested set changes
-in OCI Image and Distribution specs to enable the creation and
+OCI Reference Types Working Group delivered a suggested set of changes
+in the OCI Image and Distribution specs to enable the creation and
 discovery of relationships between objects stored in an OCI registry.
 
 These changes (with some subsequent modifications) will be included in
@@ -105,7 +105,7 @@ described in #1 above.
 
 If the registry supports the processing of the `subject` field, it is required
 to respond with a header in the following form: `OCI-Subject: sha256:5b0bca...`
-( the value being the `digest` field in the `subject` JSON object).
+(the value being the `digest` field in the `subject` JSON object).
 
 ## 3. Official Guidance on How to Specify Alternatative Artifacts
 
