@@ -8,7 +8,7 @@
 
     <ul class="lekton">
       <!-- First page. -->
-      {{ if ne $paginator.PageNumber 1 }}
+      {{ if not ( eq $paginator.PageNumber 1 ) }}
       <li class="inline-block">
         <a  href="{{ $paginator.First.URL }}" class="p-2 hover:text-mediumpurple">
           ««
@@ -71,7 +71,7 @@
       </li>
       {{ end }}
       <!-- Last page. -->
-      {{ if ne $paginator.PageNumber $paginator.TotalPages }}
+      {{ if not ( eq $paginator.PageNumber $paginator.TotalPages ) }}
       <li class="inline-block">
         <a href="{{ $paginator.Last.URL }}" class="p-2 hover:text-mediumpurple">
           »»
