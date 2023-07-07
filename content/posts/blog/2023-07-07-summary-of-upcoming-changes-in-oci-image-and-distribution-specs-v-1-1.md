@@ -8,8 +8,8 @@ date: 2023-07-07
 ---
 
 As mentioned in an [earlier post](./2023-01-26-oci-in-2023.md), the
-OCI Reference Types Working Group delivered a suggested set changes
-in OCI Image and Distribution specs to enable the creation and
+OCI Reference Types Working Group delivered a suggested set of changes
+in the OCI Image and Distribution specs to enable the creation and
 discovery of relationships between objects stored in an OCI registry.
 
 These changes (with some subsequent modifications) will be included in
@@ -80,7 +80,7 @@ API endpoint described in #3 below.
 
 If the registry supports the processing of the `subject` field, it is required
 to respond with a header in the following form: `OCI-Subject: sha256:5b0bca...`
-( the value being the `digest` field in the `subject` JSON object).
+(the value being the `digest` field in the `subject` JSON object).
 
 ## 3. New Registry API Endpoint for Querying Relationships
 
@@ -130,8 +130,9 @@ In addition, clients may provide a filter in querystring in the form
 `?artifactType=<mediaType>`. Registries may or may not support this
 server-side filtering mechanism. If supported, however, the registry is
 required to respond with a header indicating the filter(s) applied:
-`OCI-Filters-Applied: artifactType`. Note: the only filter defined at
-this time is `artifactType`.
+`OCI-Filters-Applied: artifactType`.
+
+Note: the only filter defined at this time is `artifactType`.
 
 # Closing Thoughts
 
@@ -140,9 +141,9 @@ OCI Image and Distribution specs v1.1, however there are several other
 fine-grained details which can only be understood by carefully reading
 through the specifications.
 
-Some other changes include:
+Some other notable changes include the following:
 
-- `data`` field in the descriptor
+- `data` field in the descriptor
 - non-distributable layers are deprecated
 - zstd compression support
 - extension support in distribution-spec
