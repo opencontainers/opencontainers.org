@@ -6,6 +6,14 @@
   {{ end }}
 </title>
 
+{{ $rssTitle := .Site.Title }}
+{{ if eq .IsHome false }}
+    {{ $rssTitle = printf `%s - %s` .Page.Title $rssTitle }}
+{{ end }}
+{{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $rssTitle | safeHTML }}
+{{ end -}}
+
 {{ with .Description }}
 <meta name="description" content="{{ . }}" />
 {{ end }}
