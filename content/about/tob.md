@@ -39,10 +39,11 @@ The TOB holds infrequent meetings which are usually recorded and posted on [the 
 
 {{< card-container >}}
 
-{{< card img="/img/tob/Tycho-Andersen.jpeg" name="Tycho Andersen" termdates="2021-01-29 → 2023-01-29" company="Netflix" github="https://github.com/tych0" >}}
+{{< card img="/img/tob/Brandon-Mitchell.jpeg" name="Brandon Mitchell" termdates="2023-01-29 → 2025-01-29" company="Independent" github="https://github.com/sudo-bmitch" >}}
+Brandon is an open source developer working in the container ecosystem.
 {{< /card >}}
 
-{{< card img="/img/tob/Vincent-Batts.jpeg" name="Vincent Batts" termdates="2021-01-29 → 2023-01-29" company="Kinvolk" github="https://github.com/vbatts" linkedin="https://www.linkedin.com/in/vincentbatts/" twitter="https://twitter.com/vbatts" >}}
+{{< card img="/img/tob/Vincent-Batts.jpeg" name="Vincent Batts" termdates="2023-01-29 → 2025-01-29" company="Kinvolk" github="https://github.com/vbatts" linkedin="https://www.linkedin.com/in/vincentbatts/" twitter="https://twitter.com/vbatts" >}}
 A mindful polyglot, Vincent Batts has spent the last 15 years participating in
 the Linux and open source community.
 
@@ -77,10 +78,10 @@ as a maintainer for both projects.
 {{< card name="Nisha Kumar" termdates="2022-01-29 → 2024-01-29" company="Oracle" github="https://github.com/nishakm" >}}
 {{< /card >}}
 
-{{< card img="/img/tob/Derek-McGowan.png" name="Derek McGowan" termdates="2021-01-29 → 2023-01-29" company="Docker" github="https://github.com/dmcgowan" >}}
+{{< card img="/img/tob/Derek-McGowan.png" name="Derek McGowan" termdates="2023-01-29 → 2025-01-29" company="Docker" github="https://github.com/dmcgowan" >}}
 {{< /card >}}
 
-{{< card img="/img/tob/Aleksa-Sarai.jpeg" name="Aleksa Sarai" termdates="2021-01-29 → 2023-01-29" company="SUSE" github="https://github.com/cyphar" twitter="https://twitter.com/lordcyphar" personal="https://www.cyphar.com/" >}}
+{{< card img="/img/tob/Aleksa-Sarai.jpeg" name="Aleksa Sarai" termdates="2023-01-29 → 2025-01-29" company="SUSE" github="https://github.com/cyphar" twitter="https://twitter.com/lordcyphar" personal="https://www.cyphar.com/" >}}
 Aleksa Sarai is a core developer and maintainer of runc and umoci, contributor
 and maintainer of Open Container Initiative specifications, and a Linux kernel
 contributor. He works on the containers team at SUSE, maintaining various core
