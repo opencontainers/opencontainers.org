@@ -43,7 +43,7 @@ The TOB holds infrequent meetings which are usually recorded and posted on [the 
 Brandon is an open source developer working in the container ecosystem.
 {{< /card >}}
 
-{{< card img="/img/tob/Vincent-Batts.jpeg" name="Vincent Batts" termdates="2023-01-29 → 2025-01-29" company="Kinvolk" github="https://github.com/vbatts" linkedin="https://www.linkedin.com/in/vincentbatts/" twitter="https://twitter.com/vbatts" >}}
+{{< card img="/img/tob/Vincent-Batts.jpeg" name="Vincent Batts" termdates="2023-01-29 → 2025-01-29" company="Microsoft" github="https://github.com/vbatts" linkedin="https://www.linkedin.com/in/vincentbatts/" twitter="https://twitter.com/vbatts" >}}
 A mindful polyglot, Vincent Batts has spent the last 15 years participating in
 the Linux and open source community.
 
@@ -65,8 +65,8 @@ CNCF containerd project and has been active in the OCI since its founding
 in 2015.
 {{< /card >}}
 
-{{< card name="Jon Johnson" termdates="2022-01-29 → 2024-01-29" company="Google" github="https://github.com/jonjohnsonjr" >}}
-Software engineer at Google working on containers.
+{{< card name="Jon Johnson" termdates="2022-01-29 → 2024-01-29" company="Chainguard" github="https://github.com/jonjohnsonjr" >}}
+Software engineer at Chainguard working on containers.
 {{< /card >}}
 
 {{< card img="/img/tob/Samuel-Karp.jpeg" name="Samuel Karp" termdates="2022-01-29 → 2024-01-29" title="TOB Chair" company="Google" github="https://github.com/samuelkarp" twitter="https://twitter.com/samuelkarp" personal="https://samuelkarp.com" >}}
