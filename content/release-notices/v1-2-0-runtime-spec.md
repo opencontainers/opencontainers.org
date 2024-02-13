@@ -16,36 +16,17 @@ The [OCI Charter’s IP Policy](https://www.opencontainers.org/about/governance)
 
 The 30 day period has passed and all OCI members listed below are bound by the obligations set forth in the Open Web Foundation Final Specification Agreement (OWFa 1.0) (Patent Only):
 
+- Alibaba
 - Amazon Web Services
-- Anchore
-- AT&T
+- Chainguard
 - Cisco Systems
-- Dell
 - Docker
 - Easystack
-- EMC
-- Facebook
-- Fujitsu
 - Goldman Sachs
 - Google
-- HPE
 - Huawei
 - IBM
-- Infoblox
-- Intel Corporation
 - Microsoft
-- Oracle
-- Portworx
-- Rancher Labs
 - Red Hat
 - Replicated
-- Resin.io
-- Robin Systems Inc.
-- SUSE
-- Sysdig
-- Twistlock
-- Univa
-- Verizon
-- Virtuozzo (formerly Odin/Parallels)
-- VMware
 - Weaveworks
