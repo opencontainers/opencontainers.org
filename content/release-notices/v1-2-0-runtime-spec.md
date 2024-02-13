@@ -2,7 +2,7 @@
 title: "OCI runtime-spec v. 1.2.0 release notice"
 ---
 
-**Date: 7/21/2023**
+**Date: 2/13/2024**
 
 **We are excited to inform you that OCI runtime-spec has released version 1.2.0!**
 
