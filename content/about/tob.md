@@ -53,10 +53,10 @@ Slackware Linux's Core Team, a past maintainer on the Docker project, as well
 as the Go compiler for Fedora and Red Hat.
 {{< /card >}}
 
-{{< card name="Josh Dolitsky" termdates="2022-01-29 → 2024-01-29" company="Chainguard" github="https://github.com/jdolitsky" >}}
+{{< card name="Giuseppe Scrivano" termdates="2024-01-29 → 2026-01-29" company="Red Hat" github="https://github.com/giuseppe" >}}
 {{< /card >}}
 
-{{< card img="/img/tob/Phil-Estes.jpg" name="Phil Estes" termdates="2022-01-29 → 2024-01-29" company="AWS" github="https://github.com/estesp" twitter="https://twitter.com/estesp" >}}
+{{< card img="/img/tob/Phil-Estes.jpg" name="Phil Estes" termdates="2024-01-29 → 2026-01-29" company="AWS" github="https://github.com/estesp" twitter="https://twitter.com/estesp" >}}
 Phil is a principal engineer at Amazon Web Services working on core container
 technologies.
 
@@ -65,17 +65,16 @@ CNCF containerd project and has been active in the OCI since its founding
 in 2015.
 {{< /card >}}
 
-{{< card name="Jon Johnson" termdates="2022-01-29 → 2024-01-29" company="Chainguard" github="https://github.com/jonjohnsonjr" >}}
-Software engineer at Chainguard working on containers.
+{{< card name="Ramkumar Chinchani" termdates="2024-01-29 → 2026-01-29" company="Cisco" github="https://github.com/rchincha" >}}
 {{< /card >}}
 
-{{< card img="/img/tob/Samuel-Karp.jpeg" name="Samuel Karp" termdates="2022-01-29 → 2024-01-29" title="TOB Chair" company="Google" github="https://github.com/samuelkarp" twitter="https://twitter.com/samuelkarp" personal="https://samuelkarp.com" >}}
+{{< card name="Sajay Antony" termdates="2024-01-29 → 2026-01-29" company="Microsoft" github="https://github.com/sajayantony" >}}
+{{< /card >}}
+
+{{< card img="/img/tob/Samuel-Karp.jpeg" name="Samuel Karp" termdates="2024-01-29 → 2026-01-29" title="TOB Chair" company="Google" github="https://github.com/samuelkarp" twitter="https://twitter.com/samuelkarp" personal="https://samuelkarp.com" >}}
 Samuel Karp is a Staff Software Engineer working on containers at Google. Sam
 first contributed to Docker in 2015 and containerd in 2017 and is now involved
 as a maintainer for both projects.
-{{< /card >}}
-
-{{< card name="Nisha Kumar" termdates="2022-01-29 → 2024-01-29" company="Oracle" github="https://github.com/nishakm" >}}
 {{< /card >}}
 
 {{< card img="/img/tob/Derek-McGowan.png" name="Derek McGowan" termdates="2023-01-29 → 2025-01-29" company="Docker" github="https://github.com/dmcgowan" >}}
