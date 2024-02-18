@@ -29,7 +29,7 @@ This enhancement was made to solve the issue that the IDMapping field introduced
 ## [config: add support for org.opencontainers.image annotations (#1197)](https://github.com/opencontainers/runtime-spec/pull/1197)
 
 The org.containers.image has been added as a reserved annotation. Each field is linked with the OCI Image Spec, so please refer to the following for more details.  
-https://github.com/opencontainers/image-spec/blob/v1.1.0-rc2/conversion.md#annotation-fields
+https://github.com/opencontainers/image-spec/blob/v1.1.0/conversion.md#annotation-fields
 
 ## [features: add potentiallyUnsafeConfigAnnotations (#1205)](https://github.com/opencontainers/runtime-spec/pull/1205)
 
