@@ -8,7 +8,7 @@ date: 2024-02-19
 ---
 
 We are delighted to annouce the release of the [OCI Runtime Spec](https://github.com/opencontainers/runtime-spec) v1.2.0.
-This release contains [about 10 pull requests](https://github.com/opencontainers/runtime-spec/milestone/19?closed=1) that were merged in the last three years.
+This release contains [about 10 pull requests](https://github.com/opencontainers/runtime-spec/milestone/19?closed=1) that were merged since the 1.1.0 release.
 We appreciate everybody who contributed to this release.
 
 # What is the OCI Runtime Spec?
