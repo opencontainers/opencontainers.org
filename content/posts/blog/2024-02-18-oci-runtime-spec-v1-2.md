@@ -4,7 +4,7 @@ author:
   name: Open Container Initiative
   tag: oci
 tags: blog
-date: 2024-02-19
+date: 2024-02-18
 ---
 
 We are delighted to annouce the release of the [OCI Runtime Spec](https://github.com/opencontainers/runtime-spec) v1.2.0.
