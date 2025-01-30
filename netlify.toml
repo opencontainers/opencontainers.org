@@ -15,9 +15,8 @@ command = "make preview-build"
 [[redirects]]
   from = "/about/governance"
   to = "https://github.com/opencontainers/tob/blob/main/CHARTER.md"
-  status = 301
+  status = 302
   force = false
-  query = {path = ":path"}
 
 [[redirects]]
   from = "chat.opencontainers.org"
