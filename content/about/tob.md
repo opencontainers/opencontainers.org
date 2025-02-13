@@ -57,7 +57,14 @@ CNCF containerd project and has been active in the OCI since its founding
 in 2015.
 {{< /card >}}
 
-{{< card name="Tianon Gravi" termdates="2025-01-29 → 2027-01-29" company="Docker" github="https://github.com/tianon" >}}
+{{< card img="/img/tob/Tianon-Gravi.png" name="Tianon Gravi" termdates="2025-01-29 → 2027-01-29" company="Docker" github="https://github.com/tianon" personal="https://tianon.xyz" >}}
+Tianon has been involved in the OCI community since the inception and has been a
+diligent participant in TDC maintainership (runtime-spec and more recently the
+image-spec) and meeting attendance for that duration.
+
+Over the years, he's also been involved in many related/adjacent ecosystems,
+especially the Docker Engine ("the Moby Project"), Docker's Official Images
+program, containerd, and Debian.
 {{< /card >}}
 
 {{< card img="/img/tob/Samuel-Karp.jpeg" name="Samuel Karp" termdates="2024-01-29 → 2026-01-29" title="TOB Chair" company="Google" github="https://github.com/samuelkarp" twitter="https://twitter.com/samuelkarp" personal="https://samuelkarp.com" >}}
