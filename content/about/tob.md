@@ -39,21 +39,13 @@ The TOB holds infrequent meetings which are usually recorded and posted on [the 
 
 {{< card-container >}}
 
-{{< card img="/img/tob/Brandon-Mitchell.jpeg" name="Brandon Mitchell" termdates="2023-01-29 → 2025-01-29" company="Independent" github="https://github.com/sudo-bmitch" >}}
-Brandon is an open source developer working in the container ecosystem.
+{{< card name="Sajay Antony" termdates="2024-01-29 → 2026-01-29" company="Microsoft" github="https://github.com/sajayantony" >}}
 {{< /card >}}
 
-{{< card img="/img/tob/Vincent-Batts.jpeg" name="Vincent Batts" termdates="2023-01-29 → 2025-01-29" company="Microsoft" github="https://github.com/vbatts" linkedin="https://www.linkedin.com/in/vincentbatts/" twitter="https://twitter.com/vbatts" >}}
-A mindful polyglot, Vincent Batts has spent the last 15 years participating in
-the Linux and open source community.
-
-Presently involved on the Open Containers Initiative as a maintainer and on the
-technical board, as well as a maintainer on the appc/spec. An ongoing member on
-Slackware Linux's Core Team, a past maintainer on the Docker project, as well
-as the Go compiler for Fedora and Red Hat.
+{{< card name="Mike Brown" termdates="2025-01-29 → 2027-01-29" company="IBM" github="https://github.com/mikebrow" >}}
 {{< /card >}}
 
-{{< card name="Giuseppe Scrivano" termdates="2024-01-29 → 2026-01-29" company="Red Hat" github="https://github.com/giuseppe" >}}
+{{< card name="Ramkumar Chinchani" termdates="2024-01-29 → 2026-01-29" company="Cisco" github="https://github.com/rchincha" >}}
 {{< /card >}}
 
 {{< card img="/img/tob/Phil-Estes.jpg" name="Phil Estes" termdates="2024-01-29 → 2026-01-29" company="AWS" github="https://github.com/estesp" twitter="https://twitter.com/estesp" >}}
@@ -65,10 +57,14 @@ CNCF containerd project and has been active in the OCI since its founding
 in 2015.
 {{< /card >}}
 
-{{< card name="Ramkumar Chinchani" termdates="2024-01-29 → 2026-01-29" company="Cisco" github="https://github.com/rchincha" >}}
-{{< /card >}}
+{{< card img="/img/tob/Tianon-Gravi.png" name="Tianon Gravi" termdates="2025-01-29 → 2027-01-29" company="Docker" github="https://github.com/tianon" personal="https://tianon.xyz" >}}
+Tianon has been involved in the OCI community since the inception and has been a
+diligent participant in TDC maintainership (runtime-spec and more recently the
+image-spec) and meeting attendance for that duration.
 
-{{< card name="Sajay Antony" termdates="2024-01-29 → 2026-01-29" company="Microsoft" github="https://github.com/sajayantony" >}}
+Over the years, he's also been involved in many related/adjacent ecosystems,
+especially the Docker Engine ("the Moby Project"), Docker's Official Images
+program, containerd, and Debian.
 {{< /card >}}
 
 {{< card img="/img/tob/Samuel-Karp.jpeg" name="Samuel Karp" termdates="2024-01-29 → 2026-01-29" title="TOB Chair" company="Google" github="https://github.com/samuelkarp" twitter="https://twitter.com/samuelkarp" personal="https://samuelkarp.com" >}}
@@ -77,16 +73,21 @@ first contributed to Docker in 2015 and containerd in 2017 and is now involved
 as a maintainer for both projects.
 {{< /card >}}
 
-{{< card img="/img/tob/Derek-McGowan.png" name="Derek McGowan" termdates="2023-01-29 → 2025-01-29" company="Docker" github="https://github.com/dmcgowan" >}}
+{{< card img="/img/tob/Brandon-Mitchell.jpeg" name="Brandon Mitchell" termdates="2025-01-29 → 2027-01-29" company="Independent" github="https://github.com/sudo-bmitch"  personal="https://bmitch.net" >}}
+Brandon is an open source developer working in the container ecosystem.
+He maintains the regclient and olareg projects.
 {{< /card >}}
 
-{{< card img="/img/tob/Aleksa-Sarai.jpeg" name="Aleksa Sarai" termdates="2023-01-29 → 2025-01-29" company="SUSE" github="https://github.com/cyphar" twitter="https://twitter.com/lordcyphar" personal="https://www.cyphar.com/" >}}
+{{< card img="/img/tob/Aleksa-Sarai.jpeg" name="Aleksa Sarai" termdates="2025-01-29 → 2027-01-29" company="SUSE" github="https://github.com/cyphar" twitter="https://twitter.com/lordcyphar" personal="https://www.cyphar.com/" >}}
 Aleksa Sarai is a core developer and maintainer of runc and umoci, contributor
 and maintainer of Open Container Initiative specifications, and a Linux kernel
 contributor. He works on the containers team at SUSE, maintaining various core
 parts of the lower levels of the containers stack and related software for both
 SUSE Linux Enterprise and openSUSE; he is also committed to working in the
 open, and is a strong proponent of Free Software.
+{{< /card >}}
+
+{{< card name="Giuseppe Scrivano" termdates="2024-01-29 → 2026-01-29" company="Red Hat" github="https://github.com/giuseppe" >}}
 {{< /card >}}
 
 {{< /card-container >}}
