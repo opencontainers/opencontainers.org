@@ -16,6 +16,7 @@ Per the [OCI Charter’s IP Policy](https://github.com/opencontainers/tob/blob/m
 - [v1.1.0 runtime-spec (7/21/23)](/release-notices/v1-1-0-runtime-spec)
 - [v1.2.0 runtime-spec (2/13/24)](/release-notices/v1-2-0-runtime-spec)
 - [v1.2.1 runtime-spec (2/27/25)](/release-notices/v1-2-1-runtime-spec)
+- [v1.3.0 runtime-spec (11/04/25)](/release-notices/v1-3-0-runtime-spec)
 - [v1.0.0 distribution-spec (5/5/21)](/release-notices/v1-0-0-distribution-spec)
 - [v1.0.1 distribution-spec (11/17/21)](/release-notices/v1-0-1-distribution-spec)
 - [v1.1.0 distribution-spec (02/15/24)](/release-notices/v1-1-0-distribution-spec)
