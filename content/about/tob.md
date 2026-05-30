@@ -39,13 +39,13 @@ The TOB holds infrequent meetings which are usually recorded and posted on [the 
 
 {{< card-container >}}
 
-{{< card name="Sajay Antony" termdates="2026-01-29 → 2028-01-29" company="Microsoft" github="https://github.com/sajayantony" >}}
+{{< card img="/img/tob/Sajay-Antony.png" name="Sajay Antony" termdates="2026-01-29 → 2028-01-29" company="Microsoft" github="https://github.com/sajayantony" >}}
 {{< /card >}}
 
-{{< card name="Mike Brown" termdates="2025-01-29 → 2027-01-29" company="IBM" github="https://github.com/mikebrow" >}}
+{{< card img="/img/tob/Mike-Brown.jpeg" name="Mike Brown" termdates="2025-01-29 → 2027-01-29" company="IBM" github="https://github.com/mikebrow" >}}
 {{< /card >}}
 
-{{< card name="Jeff Carter" termdates="2026-01-29 → 2028-01-29" company="Docker" github="https://github.com/jcarter3" >}}
+{{< card img="/img/tob/Jeff-Carter.jpeg" name="Jeff Carter" termdates="2026-01-29 → 2028-01-29" company="Docker" github="https://github.com/jcarter3" >}}
 {{< /card >}}
 
 {{< card img="/img/tob/Phil-Estes.jpg" name="Phil Estes" termdates="2026-01-29 → 2028-01-29" company="AWS" github="https://github.com/estesp" twitter="https://twitter.com/estesp" >}}
