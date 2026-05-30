@@ -78,13 +78,14 @@ Brandon is an open source developer working in the container ecosystem.
 He maintains the regclient and olareg projects.
 {{< /card >}}
 
-{{< card img="/img/tob/Aleksa-Sarai.jpeg" name="Aleksa Sarai" termdates="2025-01-29 → 2027-01-29" company="SUSE" github="https://github.com/cyphar" twitter="https://twitter.com/lordcyphar" personal="https://www.cyphar.com/" >}}
+{{< card img="/img/tob/Aleksa-Sarai.jpeg" name="Aleksa Sarai" termdates="2025-01-29 → 2027-01-29" company="Amutable" github="https://github.com/cyphar" twitter="https://twitter.com/lordcyphar" personal="https://www.cyphar.com/" >}}
 Aleksa Sarai is a core developer and maintainer of runc and umoci, contributor
-and maintainer of Open Container Initiative specifications, and a Linux kernel
-contributor. He works on the containers team at SUSE, maintaining various core
-parts of the lower levels of the containers stack and related software for both
-SUSE Linux Enterprise and openSUSE; he is also committed to working in the
-open, and is a strong proponent of Free Software.
+and maintainer of Open Container Initiative specifications (having been
+involved since the founding of the OCI in 2015), and a Linux kernel
+contributor. He works as a founding engineer at Amutable, building systems
+around verifiable integrity; he is committed to working in the open, and is a
+strong proponent of Free Software. He is also a package maintainer for most of
+the core container stack on openSUSE.
 {{< /card >}}
 
 {{< card name="Giuseppe Scrivano" termdates="2024-01-29 → 2026-01-29" company="Red Hat" github="https://github.com/giuseppe" >}}
