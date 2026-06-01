@@ -39,16 +39,16 @@ The TOB holds infrequent meetings which are usually recorded and posted on [the 
 
 {{< card-container >}}
 
-{{< card name="Sajay Antony" termdates="2024-01-29 → 2026-01-29" company="Microsoft" github="https://github.com/sajayantony" >}}
+{{< card img="/img/tob/Sajay-Antony.png" name="Sajay Antony" termdates="2026-01-29 → 2028-01-29" company="Microsoft" github="https://github.com/sajayantony" >}}
 {{< /card >}}
 
-{{< card name="Mike Brown" termdates="2025-01-29 → 2027-01-29" company="IBM" github="https://github.com/mikebrow" >}}
+{{< card img="/img/tob/Mike-Brown.jpeg" name="Mike Brown" termdates="2025-01-29 → 2027-01-29" company="IBM" github="https://github.com/mikebrow" >}}
 {{< /card >}}
 
-{{< card name="Ramkumar Chinchani" termdates="2024-01-29 → 2026-01-29" company="Cisco" github="https://github.com/rchincha" >}}
+{{< card img="/img/tob/Jeff-Carter.jpeg" name="Jeff Carter" termdates="2026-01-29 → 2028-01-29" company="Docker" github="https://github.com/jcarter3" >}}
 {{< /card >}}
 
-{{< card img="/img/tob/Phil-Estes.jpg" name="Phil Estes" termdates="2024-01-29 → 2026-01-29" company="AWS" github="https://github.com/estesp" twitter="https://twitter.com/estesp" >}}
+{{< card img="/img/tob/Phil-Estes.jpg" name="Phil Estes" termdates="2026-01-29 → 2028-01-29" company="AWS" github="https://github.com/estesp" twitter="https://twitter.com/estesp" >}}
 Phil is a principal engineer at Amazon Web Services working on core container
 technologies.
 
@@ -67,7 +67,7 @@ especially the Docker Engine ("the Moby Project"), Docker's Official Images
 program, containerd, and Debian.
 {{< /card >}}
 
-{{< card img="/img/tob/Samuel-Karp.jpeg" name="Samuel Karp" termdates="2024-01-29 → 2026-01-29" title="TOB Chair" company="Google" github="https://github.com/samuelkarp" twitter="https://twitter.com/samuelkarp" personal="https://samuelkarp.com" >}}
+{{< card img="/img/tob/Samuel-Karp.jpeg" name="Samuel Karp" termdates="2026-01-29 → 2028-01-29" title="TOB Chair" company="Google" github="https://github.com/samuelkarp" twitter="https://twitter.com/samuelkarp" personal="https://samuelkarp.com" >}}
 Samuel Karp is a Staff Software Engineer working on containers at Google. Sam
 first contributed to Docker in 2015 and containerd in 2017 and is now involved
 as a maintainer for both projects.
@@ -78,16 +78,14 @@ Brandon is an open source developer working in the container ecosystem.
 He maintains the regclient and olareg projects.
 {{< /card >}}
 
-{{< card img="/img/tob/Aleksa-Sarai.jpeg" name="Aleksa Sarai" termdates="2025-01-29 → 2027-01-29" company="SUSE" github="https://github.com/cyphar" twitter="https://twitter.com/lordcyphar" personal="https://www.cyphar.com/" >}}
+{{< card img="/img/tob/Aleksa-Sarai.jpeg" name="Aleksa Sarai" termdates="2025-01-29 → 2027-01-29" company="Amutable" github="https://github.com/cyphar" twitter="https://twitter.com/lordcyphar" personal="https://www.cyphar.com/" >}}
 Aleksa Sarai is a core developer and maintainer of runc and umoci, contributor
-and maintainer of Open Container Initiative specifications, and a Linux kernel
-contributor. He works on the containers team at SUSE, maintaining various core
-parts of the lower levels of the containers stack and related software for both
-SUSE Linux Enterprise and openSUSE; he is also committed to working in the
-open, and is a strong proponent of Free Software.
-{{< /card >}}
-
-{{< card name="Giuseppe Scrivano" termdates="2024-01-29 → 2026-01-29" company="Red Hat" github="https://github.com/giuseppe" >}}
+and maintainer of Open Container Initiative specifications (having been
+involved since the founding of the OCI in 2015), and a Linux kernel
+contributor. He works as a founding engineer at Amutable, building systems
+around verifiable integrity; he is committed to working in the open, and is a
+strong proponent of Free Software. He is also a package maintainer for most of
+the core container stack on openSUSE.
 {{< /card >}}
 
 {{< /card-container >}}
