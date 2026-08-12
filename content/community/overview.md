@@ -24,7 +24,7 @@ Minutes are embedded in the HackMD document and recordings are made available on
 ## Chat
 
 OCI uses Slack for discussions.
-Use the [community inviter](https://communityinviter.com/apps/opencontainers/join-the-oci-community) to join.
+Use the [community inviter](https://join.slack.com/t/opencontainers/shared_invite/zt-46o3aqh6u-yPSQ9QtH~DdznuNd7gsT6w) to join.
 
 ## GitHub
 
